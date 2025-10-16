@@ -1,0 +1,52 @@
+import React, { useEffect, useState } from "react";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#A020F0"];
+
+function PieCharts() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/products")
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((err) => console.error("Error fetching data:", err));
+  }, []);
+  
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h2 style={{ color: "#333" }}>Product Sales Distribution</h2>
+
+      <ResponsiveContainer width="90%" height={400}>
+        <PieChart>
+          <Pie
+            data={data}
+            dataKey="sales"
+            nameKey="name"
+            cx="50%"
+            cy="50%"
+            outerRadius={130}
+            label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+            isAnimationActive={true}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            ))}
+          </Pie>
+          <Tooltip />
+          <Legend verticalAlign="bottom" />
+        </PieChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
+export default PieCharts;
