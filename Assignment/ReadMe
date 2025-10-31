@@ -1,0 +1,48 @@
+# 🎓 College Management Web API
+
+This project — **CollegeProject** — is a .NET 8 Web API built using the **Repository Pattern** and **Database-First Approach**, providing secure CRUD operations on **Students** and **Courses** with **JWT Authentication and Authorization**.  
+It also includes a separate **College_View** API layer for frontend integration.
+
+
+## 🚀 Features
+
+✅ **Entity Framework Core (Database-First)** – Reverse-engineered from SQL Server using EF Core  
+✅ **Repository Pattern** – Clean separation between Data Access and Business Logic  
+✅ **JWT Authentication** – Secure login and token-based authorization  
+✅ **CRUD Operations** – Full create, read, update, delete for Students and Courses  
+✅ **Role-Based Authorization** – Only authenticated users can access specific endpoints  
+✅ **Swagger Integration** – Interactive API testing interface  
+✅ **CORS Enabled** – Allows web client apps to consume this API  
+✅ **College_View API** – Lightweight view API for simplified frontend access  
+
+
+## 🧩 Project Structure
+
+CollegeProject/
+│
+├── Controllers/
+│ ├── AuthController.cs
+│ ├── StudentController.cs
+│ ├── CourseController.cs
+│ └── CollegeViewController.cs
+│
+├── Interfaces/
+│ ├── IStudentRepository.cs
+│ ├── ICourseRepository.cs
+│ └── IAuthRepository.cs
+│
+├── Repositories/
+│ ├── StudentRepository.cs
+│ ├── CourseRepository.cs
+│ └── AuthRepository.cs
+│
+├── Models/
+│ ├── Student.cs
+│ ├── Course.cs
+│ ├── User.cs
+│ ├── LoginRequest.cs
+│ ├── CollegeDbContext.cs
+│
+├── appsettings.json
+├── Program.cs
+└── CollegeProject.csproj
