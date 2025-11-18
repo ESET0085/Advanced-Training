@@ -1,0 +1,439 @@
+2025-11-18 12:50:04.752 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-18 12:50:04.856 +05:30 [DBG] Hosting starting
+2025-11-18 12:50:04.929 +05:30 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-18 12:50:04.940 +05:30 [DBG] Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-55786c2c-9d96-49b1-994f-6ab93cc400a9.xml'.
+2025-11-18 12:50:04.992 +05:30 [DBG] Found key {55786c2c-9d96-49b1-994f-6ab93cc400a9}.
+2025-11-18 12:50:05.004 +05:30 [DBG] Considering key {55786c2c-9d96-49b1-994f-6ab93cc400a9} with expiration date 2025-12-19 10:06:28Z as default key.
+2025-11-18 12:50:05.006 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-11-18 12:50:05.007 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-11-18 12:50:05.008 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-11-18 12:50:05.011 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-11-18 12:50:05.012 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-11-18 12:50:05.013 +05:30 [DBG] Using key {55786c2c-9d96-49b1-994f-6ab93cc400a9} as the default key.
+2025-11-18 12:50:05.013 +05:30 [DBG] Key ring with default key {55786c2c-9d96-49b1-994f-6ab93cc400a9} was loaded during application startup.
+2025-11-18 12:50:05.018 +05:30 [DBG] Middleware loaded
+2025-11-18 12:50:05.019 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16513 B).
+2025-11-18 12:50:05.021 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-18 12:50:05.172 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-18 12:50:05.294 +05:30 [INF] Now listening on: https://localhost:7164
+2025-11-18 12:50:05.295 +05:30 [INF] Now listening on: http://localhost:5201
+2025-11-18 12:50:05.295 +05:30 [DBG] Loaded hosting startup assembly CollegeProject
+2025-11-18 12:50:05.295 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-18 12:50:05.295 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-18 12:50:05.295 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-18 12:50:05.306 +05:30 [DBG] Connection id "0HNH6EBIP9R8R" accepted.
+2025-11-18 12:50:05.306 +05:30 [DBG] Connection id "0HNH6EBIP9R8Q" accepted.
+2025-11-18 12:50:05.307 +05:30 [DBG] Connection id "0HNH6EBIP9R8R" started.
+2025-11-18 12:50:05.307 +05:30 [DBG] Connection id "0HNH6EBIP9R8Q" started.
+2025-11-18 12:50:05.317 +05:30 [DBG] Connection id "0HNH6EBIP9R8Q" received FIN.
+2025-11-18 12:50:05.317 +05:30 [DBG] Connection id "0HNH6EBIP9R8R" received FIN.
+2025-11-18 12:50:05.339 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 12:50:05.339 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 12:50:05.388 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 12:50:05.393 +05:30 [INF] Hosting environment: Development
+2025-11-18 12:50:05.393 +05:30 [INF] Content root path: C:\Users\user\Desktop\Advanced_training\DOT_NET\API_md\CollegeProject
+2025-11-18 12:50:05.393 +05:30 [DBG] Hosting started
+2025-11-18 12:50:05.396 +05:30 [DBG] Connection id "0HNH6EBIP9R8Q" stopped.
+2025-11-18 12:50:05.396 +05:30 [DBG] Connection id "0HNH6EBIP9R8R" stopped.
+2025-11-18 12:50:05.399 +05:30 [DBG] Connection id "0HNH6EBIP9R8Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 12:50:05.399 +05:30 [DBG] Connection id "0HNH6EBIP9R8R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 12:50:05.890 +05:30 [DBG] Connection id "0HNH6EBIP9R8S" accepted.
+2025-11-18 12:50:05.894 +05:30 [DBG] Connection id "0HNH6EBIP9R8S" started.
+2025-11-18 12:50:06.097 +05:30 [DBG] Connection 0HNH6EBIP9R8S established using the following protocol: "Tls13"
+2025-11-18 12:50:06.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger - null null
+2025-11-18 12:50:06.878 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-18 12:50:06.920 +05:30 [DBG] No candidates found for the request path '/swagger'
+2025-11-18 12:50:06.921 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:50:06.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger - 301 0 null 637.7751ms
+2025-11-18 12:50:06.968 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/index.html - null null
+2025-11-18 12:50:06.981 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-18 12:50:06.982 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:50:07.213 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-18 12:50:07.218 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-18 12:50:07.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/swagger-ui.css - null null
+2025-11-18 12:50:07.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/swagger-ui-bundle.js - null null
+2025-11-18 12:50:07.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-18 12:50:07.271 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-11-18 12:50:07.271 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-11-18 12:50:07.271 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:50:07.271 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:50:07.271 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-11-18 12:50:07.271 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:50:07.272 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-18 12:50:07.272 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-18 12:50:07.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/index.html - 200 null text/html;charset=utf-8 305.393ms
+2025-11-18 12:50:07.323 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/_vs/browserLink - null null
+2025-11-18 12:50:07.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 12:50:07.376 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-18 12:50:07.379 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 48.4268ms
+2025-11-18 12:50:07.427 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-18 12:50:07.427 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-18 12:50:07.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 162.8106ms
+2025-11-18 12:50:07.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/swagger-ui.css - 200 152034 text/css 165.6325ms
+2025-11-18 12:50:07.638 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-18 12:50:07.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 369.7182ms
+2025-11-18 12:50:07.703 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/_vs/browserLink - 200 null text/javascript; charset=UTF-8 380.7848ms
+2025-11-18 12:50:07.828 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/v1/swagger.json - null null
+2025-11-18 12:50:07.828 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-18 12:50:07.828 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:50:07.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/favicon-32x32.png - null null
+2025-11-18 12:50:07.840 +05:30 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-11-18 12:50:07.840 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:50:07.840 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-18 12:50:07.840 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/favicon-32x32.png - 200 628 image/png 1.1592ms
+2025-11-18 12:50:07.948 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.5331ms
+2025-11-18 12:50:16.963 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/api/Student - null null
+2025-11-18 12:50:16.968 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Student'
+2025-11-18 12:50:16.970 +05:30 [DBG] Endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)' with route pattern 'api/Student' is valid for the request path '/api/Student'
+2025-11-18 12:50:16.971 +05:30 [DBG] Request matched endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:50:16.972 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-18 12:50:17.077 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-18 12:50:17.079 +05:30 [INF] Executing endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:50:17.098 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller CollegeProject.Controllers.StudentController (CollegeProject).
+2025-11-18 12:50:17.099 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-18 12:50:17.099 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-18 12:50:17.099 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-18 12:50:17.099 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-18 12:50:17.099 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-18 12:50:17.100 +05:30 [DBG] Executing controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:50:17.287 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-18 12:50:17.306 +05:30 [DBG] Executed controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:50:17.307 +05:30 [INF] Fetching all students
+2025-11-18 12:50:17.854 +05:30 [DBG] Entity Framework Core 8.0.0 initialized 'CollegeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2025-11-18 12:50:17.910 +05:30 [DBG] Compiling query expression: 
+'DbSet<Student>()'
+2025-11-18 12:50:18.037 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Student>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.StudentId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.Address (string) MaxLength(200), 1], [Property: Student.CourseId (int?) FK Index, 2], [Property: Student.DateOfBirth (DateOnly?), 3], [Property: Student.Email (string) MaxLength(100), 4], [Property: Student.Gender (string) MaxLength(10), 5], [Property: Student.Name (string) Required MaxLength(100), 6], [Property: Student.Phone (string) MaxLength(15), 7], [Property: Student.RollNumber (string) Required Index MaxLength(20), 8] }
+        SELECT s.StudentId, s.Address, s.CourseId, s.DateOfBirth, s.Email, s.Gender, s.Name, s.Phone, s.RollNumber
+        FROM Student AS s), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Student>, 
+    CollegeProject.Models.CollegeDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-11-18 12:50:18.059 +05:30 [DBG] Creating DbConnection.
+2025-11-18 12:50:18.087 +05:30 [DBG] Created DbConnection. (27ms).
+2025-11-18 12:50:18.089 +05:30 [DBG] Opening connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:18.615 +05:30 [DBG] Opened connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:18.617 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 12:50:18.622 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-11-18 12:50:18.623 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2025-11-18 12:50:18.629 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+2025-11-18 12:50:18.704 +05:30 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+2025-11-18 12:50:18.737 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.761 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.761 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.763 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.764 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.764 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.764 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.764 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.764 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:50:18.767 +05:30 [DBG] Closing data reader to 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:18.770 +05:30 [DBG] A data reader for 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' is being disposed after spending 63ms reading results.
+2025-11-18 12:50:18.772 +05:30 [DBG] Closing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:18.776 +05:30 [DBG] Closed connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' (3ms).
+2025-11-18 12:50:18.779 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-11-18 12:50:18.780 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-11-18 12:50:18.780 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-18 12:50:18.780 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-18 12:50:18.781 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-18 12:50:18.781 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeProject.Models.Student, CollegeProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-18 12:50:18.897 +05:30 [INF] Executed action CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject) in 1794.1814ms
+2025-11-18 12:50:18.897 +05:30 [INF] Executed endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:50:18.899 +05:30 [DBG] 'CollegeDbContext' disposed.
+2025-11-18 12:50:18.902 +05:30 [DBG] Disposing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:18.903 +05:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-11-18 12:50:18.904 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/api/Student - 200 1882 application/json; charset=utf-8 1941.4905ms
+2025-11-18 12:50:37.847 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/api/Student/1 - null null
+2025-11-18 12:50:37.856 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Student/1'
+2025-11-18 12:50:37.856 +05:30 [DBG] Endpoint 'CollegeProject.Controllers.StudentController.GetStudentById (CollegeProject)' with route pattern 'api/Student/{id}' is valid for the request path '/api/Student/1'
+2025-11-18 12:50:37.856 +05:30 [DBG] Request matched endpoint 'CollegeProject.Controllers.StudentController.GetStudentById (CollegeProject)'
+2025-11-18 12:50:37.857 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-18 12:50:37.858 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-18 12:50:37.858 +05:30 [INF] Executing endpoint 'CollegeProject.Controllers.StudentController.GetStudentById (CollegeProject)'
+2025-11-18 12:50:37.867 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStudentById(Int32) on controller CollegeProject.Controllers.StudentController (CollegeProject).
+2025-11-18 12:50:37.867 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-18 12:50:37.867 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-18 12:50:37.867 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-18 12:50:37.867 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-18 12:50:37.867 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-18 12:50:37.867 +05:30 [DBG] Executing controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:50:37.868 +05:30 [DBG] Executed controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:50:37.871 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-18 12:50:37.873 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-18 12:50:37.873 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-18 12:50:37.873 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-18 12:50:37.873 +05:30 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-18 12:50:37.875 +05:30 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-18 12:50:37.886 +05:30 [DBG] Entity Framework Core 8.0.0 initialized 'CollegeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2025-11-18 12:50:37.901 +05:30 [DBG] Compiling query expression: 
+'DbSet<Student>()
+    .FirstOrDefault(e => EF.Property<int>(e, "StudentId") == __p_0)'
+2025-11-18 12:50:37.954 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Student>(
+    asyncEnumerable: new SingleQueryingEnumerable<Student>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.StudentId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.Address (string) MaxLength(200), 1], [Property: Student.CourseId (int?) FK Index, 2], [Property: Student.DateOfBirth (DateOnly?), 3], [Property: Student.Email (string) MaxLength(100), 4], [Property: Student.Gender (string) MaxLength(10), 5], [Property: Student.Name (string) Required MaxLength(100), 6], [Property: Student.Phone (string) MaxLength(15), 7], [Property: Student.RollNumber (string) Required Index MaxLength(20), 8] }
+            SELECT TOP(1) s.StudentId, s.Address, s.CourseId, s.DateOfBirth, s.Email, s.Gender, s.Name, s.Phone, s.RollNumber
+            FROM Student AS s
+            WHERE s.StudentId == @__p_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Student>, 
+        CollegeProject.Models.CollegeDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-18 12:50:37.959 +05:30 [DBG] Creating DbConnection.
+2025-11-18 12:50:37.959 +05:30 [DBG] Created DbConnection. (0ms).
+2025-11-18 12:50:37.959 +05:30 [DBG] Opening connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:37.960 +05:30 [DBG] Opened connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:37.960 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 12:50:37.960 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-18 12:50:37.963 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-11-18 12:50:37.967 +05:30 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+WHERE [s].[StudentId] = @__p_0
+2025-11-18 12:50:38.008 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+WHERE [s].[StudentId] = @__p_0
+2025-11-18 12:50:38.008 +05:30 [DBG] Closing data reader to 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:38.009 +05:30 [DBG] A data reader for 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' is being disposed after spending 1ms reading results.
+2025-11-18 12:50:38.009 +05:30 [DBG] Closing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:38.009 +05:30 [DBG] Closed connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' (0ms).
+2025-11-18 12:50:38.009 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-11-18 12:50:38.010 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-11-18 12:50:38.010 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-18 12:50:38.010 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-18 12:50:38.010 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-18 12:50:38.010 +05:30 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-18 12:50:38.013 +05:30 [INF] Executed action CollegeProject.Controllers.StudentController.GetStudentById (CollegeProject) in 145.9591ms
+2025-11-18 12:50:38.013 +05:30 [INF] Executed endpoint 'CollegeProject.Controllers.StudentController.GetStudentById (CollegeProject)'
+2025-11-18 12:50:38.014 +05:30 [DBG] 'CollegeDbContext' disposed.
+2025-11-18 12:50:38.014 +05:30 [DBG] Disposing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:50:38.014 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-11-18 12:50:38.014 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/api/Student/1 - 404 31 application/json; charset=utf-8 166.5577ms
+2025-11-18 12:51:16.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/api/Student - null null
+2025-11-18 12:51:16.473 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Student'
+2025-11-18 12:51:16.473 +05:30 [DBG] Endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)' with route pattern 'api/Student' is valid for the request path '/api/Student'
+2025-11-18 12:51:16.473 +05:30 [DBG] Request matched endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:51:16.473 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-18 12:51:16.476 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-18 12:51:16.476 +05:30 [INF] Executing endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:51:16.476 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller CollegeProject.Controllers.StudentController (CollegeProject).
+2025-11-18 12:51:16.477 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-18 12:51:16.477 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-18 12:51:16.477 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-18 12:51:16.477 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-18 12:51:16.477 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-18 12:51:16.477 +05:30 [DBG] Executing controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:51:16.480 +05:30 [DBG] Executed controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:51:16.481 +05:30 [INF] Fetching all students
+2025-11-18 12:51:16.606 +05:30 [DBG] Entity Framework Core 8.0.0 initialized 'CollegeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2025-11-18 12:51:16.609 +05:30 [DBG] Creating DbConnection.
+2025-11-18 12:51:16.609 +05:30 [DBG] Created DbConnection. (0ms).
+2025-11-18 12:51:16.609 +05:30 [DBG] Opening connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:51:16.609 +05:30 [DBG] Opened connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:51:16.609 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 12:51:16.609 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-18 12:51:16.609 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-18 12:51:16.610 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+2025-11-18 12:51:16.616 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+2025-11-18 12:51:16.616 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:51:16.617 +05:30 [DBG] Closing data reader to 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:51:16.617 +05:30 [DBG] A data reader for 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' is being disposed after spending 1ms reading results.
+2025-11-18 12:51:16.617 +05:30 [DBG] Closing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:51:16.617 +05:30 [DBG] Closed connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' (0ms).
+2025-11-18 12:51:16.618 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-11-18 12:51:16.618 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-11-18 12:51:16.618 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-18 12:51:16.618 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-18 12:51:16.618 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-18 12:51:16.618 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeProject.Models.Student, CollegeProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-18 12:51:16.619 +05:30 [INF] Executed action CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject) in 141.8618ms
+2025-11-18 12:51:16.619 +05:30 [INF] Executed endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:51:16.619 +05:30 [DBG] 'CollegeDbContext' disposed.
+2025-11-18 12:51:16.619 +05:30 [DBG] Disposing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:51:16.619 +05:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-11-18 12:51:16.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/api/Student - 200 1882 application/json; charset=utf-8 146.9242ms
+2025-11-18 12:51:59.714 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-18 12:51:59.787 +05:30 [DBG] Hosting starting
+2025-11-18 12:51:59.827 +05:30 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-18 12:51:59.834 +05:30 [DBG] Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-55786c2c-9d96-49b1-994f-6ab93cc400a9.xml'.
+2025-11-18 12:51:59.840 +05:30 [DBG] Found key {55786c2c-9d96-49b1-994f-6ab93cc400a9}.
+2025-11-18 12:51:59.846 +05:30 [DBG] Considering key {55786c2c-9d96-49b1-994f-6ab93cc400a9} with expiration date 2025-12-19 10:06:28Z as default key.
+2025-11-18 12:51:59.848 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-11-18 12:51:59.849 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-11-18 12:51:59.850 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-11-18 12:51:59.854 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-11-18 12:51:59.855 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-11-18 12:51:59.856 +05:30 [DBG] Using key {55786c2c-9d96-49b1-994f-6ab93cc400a9} as the default key.
+2025-11-18 12:51:59.856 +05:30 [DBG] Key ring with default key {55786c2c-9d96-49b1-994f-6ab93cc400a9} was loaded during application startup.
+2025-11-18 12:51:59.860 +05:30 [DBG] Middleware loaded
+2025-11-18 12:51:59.862 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16513 B).
+2025-11-18 12:51:59.863 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-18 12:51:59.974 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-18 12:52:00.073 +05:30 [INF] Now listening on: https://localhost:7164
+2025-11-18 12:52:00.073 +05:30 [INF] Now listening on: http://localhost:5201
+2025-11-18 12:52:00.073 +05:30 [DBG] Loaded hosting startup assembly CollegeProject
+2025-11-18 12:52:00.073 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-18 12:52:00.073 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-18 12:52:00.073 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-18 12:52:00.112 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 12:52:00.112 +05:30 [INF] Hosting environment: Development
+2025-11-18 12:52:00.112 +05:30 [INF] Content root path: C:\Users\user\Desktop\Advanced_training\DOT_NET\API_md\CollegeProject
+2025-11-18 12:52:00.112 +05:30 [DBG] Hosting started
+2025-11-18 12:52:00.190 +05:30 [DBG] Connection id "0HNH6ECL0TNDV" received FIN.
+2025-11-18 12:52:00.190 +05:30 [DBG] Connection id "0HNH6ECL0TNE0" received FIN.
+2025-11-18 12:52:00.204 +05:30 [DBG] Connection id "0HNH6ECL0TNDV" accepted.
+2025-11-18 12:52:00.204 +05:30 [DBG] Connection id "0HNH6ECL0TNE0" accepted.
+2025-11-18 12:52:00.205 +05:30 [DBG] Connection id "0HNH6ECL0TNDV" started.
+2025-11-18 12:52:00.205 +05:30 [DBG] Connection id "0HNH6ECL0TNE0" started.
+2025-11-18 12:52:00.257 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 12:52:00.257 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 12:52:00.301 +05:30 [DBG] Connection id "0HNH6ECL0TNDV" stopped.
+2025-11-18 12:52:00.301 +05:30 [DBG] Connection id "0HNH6ECL0TNE0" stopped.
+2025-11-18 12:52:00.303 +05:30 [DBG] Connection id "0HNH6ECL0TNE0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 12:52:00.303 +05:30 [DBG] Connection id "0HNH6ECL0TNDV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 12:52:00.867 +05:30 [DBG] Connection id "0HNH6ECL0TNE1" accepted.
+2025-11-18 12:52:00.867 +05:30 [DBG] Connection id "0HNH6ECL0TNE1" started.
+2025-11-18 12:52:00.972 +05:30 [DBG] Connection 0HNH6ECL0TNE1 established using the following protocol: "Tls13"
+2025-11-18 12:52:01.091 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/index.html - null null
+2025-11-18 12:52:01.330 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-18 12:52:01.426 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-18 12:52:01.428 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:52:01.626 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-18 12:52:01.631 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-18 12:52:01.696 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-18 12:52:01.697 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-18 12:52:01.702 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/index.html - 200 null text/html;charset=utf-8 619.6524ms
+2025-11-18 12:52:01.708 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 12:52:01.750 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-18 12:52:01.752 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/_vs/browserLink - null null
+2025-11-18 12:52:01.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 45.5206ms
+2025-11-18 12:52:01.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.9352ms
+2025-11-18 12:52:01.940 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/swagger/v1/swagger.json - null null
+2025-11-18 12:52:01.940 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-18 12:52:01.940 +05:30 [DBG] Request did not match any endpoints
+2025-11-18 12:52:02.014 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.2797ms
+2025-11-18 12:52:06.367 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7164/api/Student - null null
+2025-11-18 12:52:06.377 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Student'
+2025-11-18 12:52:06.382 +05:30 [DBG] Endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)' with route pattern 'api/Student' is valid for the request path '/api/Student'
+2025-11-18 12:52:06.382 +05:30 [DBG] Request matched endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:52:06.387 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-18 12:52:06.516 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-18 12:52:06.520 +05:30 [INF] Executing endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:52:06.568 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller CollegeProject.Controllers.StudentController (CollegeProject).
+2025-11-18 12:52:06.570 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-18 12:52:06.571 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-18 12:52:06.572 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-18 12:52:06.572 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-18 12:52:06.572 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-18 12:52:06.575 +05:30 [DBG] Executing controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:52:06.830 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-18 12:52:06.875 +05:30 [DBG] Executed controller factory for controller CollegeProject.Controllers.StudentController (CollegeProject)
+2025-11-18 12:52:06.879 +05:30 [INF] Fetching all students
+2025-11-18 12:52:08.094 +05:30 [DBG] Entity Framework Core 8.0.0 initialized 'CollegeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2025-11-18 12:52:08.159 +05:30 [DBG] Compiling query expression: 
+'DbSet<Student>()'
+2025-11-18 12:52:08.500 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Student>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.StudentId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.Address (string) MaxLength(200), 1], [Property: Student.CourseId (int?) FK Index, 2], [Property: Student.DateOfBirth (DateOnly?), 3], [Property: Student.Email (string) MaxLength(100), 4], [Property: Student.Gender (string) MaxLength(10), 5], [Property: Student.Name (string) Required MaxLength(100), 6], [Property: Student.Phone (string) MaxLength(15), 7], [Property: Student.RollNumber (string) Required Index MaxLength(20), 8] }
+        SELECT s.StudentId, s.Address, s.CourseId, s.DateOfBirth, s.Email, s.Gender, s.Name, s.Phone, s.RollNumber
+        FROM Student AS s), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Student>, 
+    CollegeProject.Models.CollegeDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-11-18 12:52:08.613 +05:30 [DBG] Creating DbConnection.
+2025-11-18 12:52:08.686 +05:30 [DBG] Created DbConnection. (62ms).
+2025-11-18 12:52:08.697 +05:30 [DBG] Opening connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:52:09.601 +05:30 [DBG] Opened connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:52:09.610 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 12:52:09.628 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (10ms).
+2025-11-18 12:52:09.635 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (25ms).
+2025-11-18 12:52:09.654 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+2025-11-18 12:52:09.828 +05:30 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentId], [s].[Address], [s].[CourseId], [s].[DateOfBirth], [s].[Email], [s].[Gender], [s].[Name], [s].[Phone], [s].[RollNumber]
+FROM [Student] AS [s]
+2025-11-18 12:52:09.984 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.103 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.104 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.119 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.120 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.121 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.121 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.122 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.122 +05:30 [DBG] Context 'CollegeDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-18 12:52:10.136 +05:30 [DBG] Closing data reader to 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:52:10.151 +05:30 [DBG] A data reader for 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' is being disposed after spending 309ms reading results.
+2025-11-18 12:52:10.160 +05:30 [DBG] Closing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:52:10.182 +05:30 [DBG] Closed connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS' (22ms).
+2025-11-18 12:52:10.193 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2025-11-18 12:52:10.199 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-11-18 12:52:10.199 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-18 12:52:10.199 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-18 12:52:10.202 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-18 12:52:10.205 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeProject.Models.Student, CollegeProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-18 12:52:10.563 +05:30 [INF] Executed action CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject) in 3974.7115ms
+2025-11-18 12:52:10.565 +05:30 [INF] Executed endpoint 'CollegeProject.Controllers.StudentController.GetAllStudents (CollegeProject)'
+2025-11-18 12:52:10.576 +05:30 [DBG] 'CollegeDbContext' disposed.
+2025-11-18 12:52:10.588 +05:30 [DBG] Disposing connection to database 'CollegeDB' on server 'LAPTOP-FPM8VUF2\SQLEXPRESS'.
+2025-11-18 12:52:10.591 +05:30 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-11-18 12:52:10.592 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7164/api/Student - 200 1882 application/json; charset=utf-8 4226.0495ms

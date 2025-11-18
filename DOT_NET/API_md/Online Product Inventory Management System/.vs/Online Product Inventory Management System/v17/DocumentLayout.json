@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system\\data\\productinventorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:data\\productinventorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\Online Product Inventory Management System\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:55:48.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:55:02.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:44:06.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:43:55.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductInventoryContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Data\\ProductInventoryContext.cs",
+              "RelativeDocumentMoniker": "Data\\ProductInventoryContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System\\Data\\ProductInventoryContext.cs",
+              "RelativeToolTip": "Data\\ProductInventoryContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:27:51.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\Online Product Inventory Management System\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\Online Product Inventory Management System\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\Online Product Inventory Management System\\Program.cs",
+              "RelativeToolTip": "..\\..\\Online Product Inventory Management System\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:21:13.528Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

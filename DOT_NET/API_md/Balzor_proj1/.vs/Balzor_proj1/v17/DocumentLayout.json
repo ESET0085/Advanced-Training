@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\balzor_proj1\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|solutionrelative:components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\balzor_proj1\\components\\pages\\indexbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|solutionrelative:components\\pages\\indexbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\balzor_proj1\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|solutionrelative:wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\balzor_proj1\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|solutionrelative:components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\balzor_proj1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\balzor_proj1\\components\\pages\\first.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|solutionrelative:components\\pages\\first.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\balzor_proj1\\components\\pages\\counterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07A79C-3AFC-4F2F-B1E9-ADF7D35131DD}|Balzor_proj1.csproj|solutionrelative:components\\pages\\counterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IndexBase.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\IndexBase.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\IndexBase.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\IndexBase.cs",
+              "RelativeToolTip": "Components\\Pages\\IndexBase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:23:14.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\Index.razor",
+              "RelativeToolTip": "Components\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T09:05:59.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\wwwroot\\app.css",
+              "RelativeToolTip": "wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-06T09:19:08.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-06T09:15:03.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T06:58:26.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "First.razor",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\First.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\First.razor",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\First.razor",
+              "RelativeToolTip": "Components\\Pages\\First.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T06:28:37.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CounterBase.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\CounterBase.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\CounterBase.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Balzor_proj1\\Components\\Pages\\CounterBase.cs",
+              "RelativeToolTip": "Components\\Pages\\CounterBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T06:18:24.004Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

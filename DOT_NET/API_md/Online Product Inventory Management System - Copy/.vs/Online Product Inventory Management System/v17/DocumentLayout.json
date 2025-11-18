@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\online product inventory management system.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:online product inventory management system.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\data\\productinventorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:data\\productinventorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\online product inventory management system - copy\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEB40A2-C3BB-44CB-84A6-8F2DDD1F8C4F}|Online Product Inventory Management System.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:29:18.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:28:41.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:01:13.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T08:53:22.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:21:13.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Online Product Inventory Management System.http",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Online Product Inventory Management System.http",
+              "RelativeDocumentMoniker": "Online Product Inventory Management System.http",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Online Product Inventory Management System.http",
+              "RelativeToolTip": "Online Product Inventory Management System.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-24T09:32:06.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:44:06.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:43:55.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductInventoryContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Data\\ProductInventoryContext.cs",
+              "RelativeDocumentMoniker": "Data\\ProductInventoryContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\Online Product Inventory Management System - Copy\\Data\\ProductInventoryContext.cs",
+              "RelativeToolTip": "Data\\ProductInventoryContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:27:51.581Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

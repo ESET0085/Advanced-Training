@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\collegeapp_view\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|solutionrelative:views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\collegeapp_view\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\collegeapp_view\\controllers\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|solutionrelative:controllers\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\collegeapp_view\\controllers\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|solutionrelative:controllers\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\collegeapp_view\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\collegeapp_view\\employeerepository_view.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7925353D-9781-4426-B5EF-87E8AEB1CFBC}|EmployeeRepository_View.csproj|solutionrelative:employeerepository_view.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAKYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T09:59:17.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:34:11.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T09:28:55.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeRepository_View.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\EmployeeRepository_View.csproj",
+              "RelativeDocumentMoniker": "EmployeeRepository_View.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\EmployeeRepository_View.csproj",
+              "RelativeToolTip": "EmployeeRepository_View.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T08:46:11.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Controllers\\Employee.cs",
+              "RelativeDocumentMoniker": "Controllers\\Employee.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Controllers\\Employee.cs",
+              "RelativeToolTip": "Controllers\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T08:48:06.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Controllers\\Auth.cs",
+              "RelativeDocumentMoniker": "Controllers\\Auth.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\CollegeApp_View\\Controllers\\Auth.cs",
+              "RelativeToolTip": "Controllers\\Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T08:47:49.99Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

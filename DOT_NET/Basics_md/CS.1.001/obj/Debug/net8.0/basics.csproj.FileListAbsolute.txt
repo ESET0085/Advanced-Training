@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\bin\Debug\net8.0\basics.exe
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\bin\Debug\net8.0\basics.deps.json
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\bin\Debug\net8.0\basics.runtimeconfig.json
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\bin\Debug\net8.0\basics.dll
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\bin\Debug\net8.0\basics.pdb
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\basics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\basics.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\basics.AssemblyInfo.cs
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\basics.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\basics.dll
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\refint\basics.dll
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\basics.pdb
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\basics.genruntimeconfig.cache
+C:\Users\user\Desktop\Advanced_training\DOT_NET\Basics_md\CS.1.001\obj\Debug\net8.0\ref\basics.dll

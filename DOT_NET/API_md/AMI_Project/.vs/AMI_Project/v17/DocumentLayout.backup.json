@@ -1,0 +1,395 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\controllers\\tariffslabcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:controllers\\tariffslabcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\controllers\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:controllers\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\models\\tariffslab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:models\\tariffslab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\models\\tariff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:models\\tariff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\models\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:models\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\controllers\\metercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:controllers\\metercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\data\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:data\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|c:\\users\\user\\desktop\\advanced_training\\dot_net\\api_md\\ami_project\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C5E650-F9DA-41D8-8916-A405EECC13CA}|AMI_Project.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MeterController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\MeterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MeterController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\MeterController.cs",
+              "RelativeToolTip": "Controllers\\MeterController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwDwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:14:23.726Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tariff.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\Tariff.cs",
+              "RelativeDocumentMoniker": "Models\\Tariff.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\Tariff.cs",
+              "RelativeToolTip": "Models\\Tariff.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:50:30.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "Interfaces\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:48:43.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Consumer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\Consumer.cs",
+              "RelativeDocumentMoniker": "Models\\Consumer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\Consumer.cs",
+              "RelativeToolTip": "Models\\Consumer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:02:36.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:18:54.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:25:00.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Services\\JwtService.cs",
+              "RelativeToolTip": "Services\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:35:33.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:32:55.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:31:13.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwCIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:08:07.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Mappings\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Mappings\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Mappings\\AutoMapperProfile.cs",
+              "RelativeToolTip": "Mappings\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:37:42.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwHsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:22:13.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T04:46:45.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:33:13.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:32:33.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Helpers\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Helpers\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Helpers\\AppSettings.cs",
+              "RelativeToolTip": "Helpers\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:37:11.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AMIDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Data\\AMIDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AMIDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Data\\AMIDbContext.cs",
+              "RelativeToolTip": "Data\\AMIDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:37:14.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:22:52.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:31:46.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:32:22.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TariffSlabController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\TariffSlabController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TariffSlabController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\TariffSlabController.cs",
+              "RelativeToolTip": "Controllers\\TariffSlabController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:22:25.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TariffController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\TariffController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TariffController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Controllers\\TariffController.cs",
+              "RelativeToolTip": "Controllers\\TariffController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwDsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:21:32.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TariffSlab.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\TariffSlab.cs",
+              "RelativeDocumentMoniker": "Models\\TariffSlab.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Advanced_training\\DOT_NET\\API_md\\AMI_Project\\Models\\TariffSlab.cs",
+              "RelativeToolTip": "Models\\TariffSlab.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:23:44.761Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

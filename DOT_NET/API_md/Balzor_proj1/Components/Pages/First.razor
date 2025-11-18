@@ -1,0 +1,17 @@
+﻿@page "/First"
+@inherits FirstBase
+
+<h3>My First Blazor Project </h3>
+
+<ul>
+
+	@foreach (var item in Employees)
+	{
+		<li>@item.Name</li>
+	}
+
+
+</ul>
+
+
+

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Collegeproject_View/1.0.0": {
+        "runtime": {
+          "Collegeproject_View.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Collegeproject_View/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

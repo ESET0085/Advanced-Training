@@ -1,0 +1,23 @@
+Bare Metal Deployment:
+
+1.Clone git repo
+2.build the project
+3.start the project with specific port
+4.set up Nginx(optional)
+5.Write nginx configuration
+6.Restart nginx
+7.ssl setup
+..........................
+
+if we want to make changes after deployment, we do 
+>login to the server
+>pull
+>re-build
+>start the project
+>restart the nginx
+
+
+
+
+
+
