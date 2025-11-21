@@ -1,0 +1,223 @@
+﻿@* @{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container mt-5" style="max-width: 400px;">
+    <h3 class="text-center mb-4">Login</h3>
+    <div id="alertBox"></div>
+
+    <form id="loginForm">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+
+        <div class="text-center mt-3">
+            <a href="/Auth/Register">Don't have an account? Register</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#loginForm").submit(function (e) {
+            e.preventDefault();
+
+            var data = {
+                username: $("#username").val(),
+                password: $("#password").val()
+            };
+
+            $.ajax({
+                url: "https://localhost:7035/api/Auth/login", // ✅ your backend API
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(data),
+                success: function (response) {
+                    $("#alertBox").html(`<div class="alert alert-success">Login successful! Redirecting...</div>`);
+                    // store credentials
+                    localStorage.setItem("jwtToken", response.token);
+                    localStorage.setItem("role", response.role || "");
+                    localStorage.setItem("email", response.email || "");
+                    localStorage.setItem("username", response.username || "");
+
+                    // ✅ redirect to dashboard page
+                    setTimeout(() => window.location.href = "/Home/Index", 1000);
+                },
+                error: function (xhr) {
+                    let msg = xhr.responseJSON?.message || "Invalid credentials!";
+                    $("#alertBox").html(`<div class="alert alert-danger">${msg}</div>`);
+                }
+            });
+        });
+    </script>
+} *@
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - AMI System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .login-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 2.5rem;
+        }
+
+        .brand-icon {
+            background: #e0f2fe;
+            color: #0284c7;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1.8rem;
+        }
+
+        .form-control {
+            padding: 0.7rem 1rem;
+        }
+
+        .input-group-text {
+            background-color: #f8fafc;
+        }
+
+        .btn-primary {
+            padding: 0.8rem;
+            font-weight: 600;
+        }
+
+        .toggle-password {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="brand-icon">
+            <i class="bi bi-lightning-charge-fill"></i>
+        </div>
+        <h4 class="text-center fw-bold text-dark mb-4">Login</h4>
+
+        <div id="alertBox"></div>
+
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="username" class="form-label text-secondary small fw-bold">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="form-label text-secondary small fw-bold">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                    <span class="input-group-text toggle-password" id="togglePassword">
+                        <i class="bi bi-eye-slash"></i>
+                    </span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100" id="loginBtn">Login</button>
+
+            <div class="text-center mt-3">
+                <a href="/Auth/Register" class="text-decoration-none">Don't have an account? Register</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Optional: Toggle password visibility (Pure UI, doesn't affect logic)
+        $("#togglePassword").click(function() {
+            const input = $("#password");
+            const icon = $(this).find("i");
+            if (input.attr("type") === "password") {
+                input.attr("type", "text");
+                icon.removeClass("bi-eye-slash").addClass("bi-eye");
+            } else {
+                input.attr("type", "password");
+                icon.removeClass("bi-eye").addClass("bi-eye-slash");
+            }
+        });
+
+        // --- LOGIC EXACTLY RESTORED ---
+        $("#loginForm").submit(function (e) {
+            e.preventDefault();
+
+            // UI helper: show loading spinner on button
+            const btn = $("#loginBtn");
+            const originalText = btn.html();
+            btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm"></span> Logging in...');
+
+            var data = {
+                username: $("#username").val(),
+                password: $("#password").val()
+            };
+
+            $.ajax({
+                // RESTORED: Using your specific port 7035
+                url: "https://localhost:7035/api/Auth/login",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(data),
+                success: function (response) {
+                    $("#alertBox").html(`<div class="alert alert-success">Login successful! Redirecting...</div>`);
+
+                    // Store credentials (Exactly as before)
+                    localStorage.setItem("jwtToken", response.token);
+                    localStorage.setItem("role", response.role || "");
+                    localStorage.setItem("email", response.email || "");
+                    localStorage.setItem("username", response.username || "");
+
+                    // Redirect
+                    setTimeout(() => window.location.href = "/Home/Index", 500);
+                },
+                error: function (xhr) {
+                    // Reset button
+                    btn.prop("disabled", false).html(originalText);
+
+                    let msg = xhr.responseJSON?.message || "Invalid credentials!";
+                    $("#alertBox").html(`<div class="alert alert-danger">${msg}</div>`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

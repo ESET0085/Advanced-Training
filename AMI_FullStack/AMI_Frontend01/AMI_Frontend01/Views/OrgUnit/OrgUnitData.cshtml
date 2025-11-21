@@ -1,0 +1,312 @@
+﻿@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+    ViewData["Title"] = "Organization Hierarchy";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+<style>
+    /* 🌿 Forest Green + Cream Theme */
+    body {
+        background-color: #FAF8F2 !important;
+        font-family: 'Segoe UI', sans-serif;
+        color: #3B3B3B;
+    }
+
+    /* Page title */
+    h2.text-primary {
+        color: #14532d !important;
+    }
+
+    /* Cards */
+    .card {
+        background: #FFFFFF;
+        border-radius: 12px;
+        border: 1px solid #B7E4C7;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+        /* Card headers / subtitles */
+        .card h5 {
+            color: #14532d;
+        }
+
+    /* Labels */
+    .form-label {
+        color: #14532d;
+        font-weight: 600;
+    }
+
+    /* Inputs and selects */
+    .form-select {
+        background: #FFFFFF;
+        border: 1px solid #B7E4C7;
+        border-radius: 8px;
+        color: #3B3B3B;
+        transition: 0.3s;
+    }
+
+        .form-select:hover {
+            border-color: #14532d;
+        }
+
+        .form-select:focus {
+            border-color: #14532d;
+            box-shadow: 0 0 6px #52B788;
+        }
+
+        /* Selected dropdown item highlight */
+        .form-select option:checked {
+            background-color: #14532d;
+            color: #fff;
+        }
+
+        .form-select option:hover {
+            background-color: #2D6A4F;
+            color: #fff;
+        }
+
+    /* Alerts */
+    .alert {
+        border-radius: 10px;
+        border: 1px solid #B7E4C7;
+    }
+
+    /* Output card */
+    #outputCard .card {
+        border: 2px solid #14532d !important;
+    }
+
+        #outputCard .card h4 {
+            color: #14532d !important;
+        }
+
+    #outputCard .list-group-item {
+        border: none;
+        border-bottom: 1px solid #B7E4C7;
+    }
+
+        #outputCard .list-group-item:last-child {
+            border-bottom: none;
+        }
+
+    /* Buttons */
+    .btn-primary {
+        background: #14532d !important;
+        border-color: #14532d !important;
+        color: #fff !important;
+    }
+
+        .btn-primary:hover {
+            background-color: #0f3d2e !important;
+            border-color: #0f3d2e !important;
+        }
+
+    .btn-close {
+        filter: invert(0.3);
+    }
+
+</style>
+
+<div class="container py-4">
+    <h2 class="fw-bold text-primary text-center mb-4">Organization Hierarchy</h2>
+
+    <div id="alertBox"></div>
+
+    <!-- Cascade Dropdowns -->
+    <div class="card shadow p-4 mb-4">
+        <h5 class="mb-3 fw-bold">Select Using Hierarchy</h5>
+
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Zone</label>
+                <select id="zoneDropdown" class="form-select">
+                    <option value="">-- Select Zone --</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Substation</label>
+                <select id="substationDropdown" class="form-select" disabled>
+                    <option value="">-- Select Substation --</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Feeder</label>
+                <select id="feederDropdown" class="form-select" disabled>
+                    <option value="">-- Select Feeder --</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label fw-bold">DTR</label>
+                <select id="dtrDropdown" class="form-select" disabled>
+                    <option value="">-- Select DTR --</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Direct DTR Selection -->
+    <div class="card shadow p-4 mb-4 border-success">
+        <h5 class="fw-bold mb-3">Select DTR Directly</h5>
+
+        <div class="row">
+            <div class="col-md-4">
+                <select id="directDtrDropdown" class="form-select">
+                    <option value="">-- Select DTR Directly --</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Output Card -->
+    <div id="outputCard"></div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const apiBase = "https://localhost:7035/api/OrgUnit";
+        let orgUnits = [];
+
+        $(document).ready(function () {
+            loadOrgUnits();
+        });
+
+        function loadOrgUnits() {
+            $.get(apiBase, function (data) {
+                orgUnits = data;
+                loadZones();
+                loadDirectDTRs();
+            }).fail(() => showAlert("Failed to load organization units", "danger"));
+        }
+
+        function loadDirectDTRs() {
+            const dtrs = orgUnits.filter(o => o.type === "DTR");
+            $("#directDtrDropdown").append(
+                dtrs.map(d => `<option value="${d.orgUnitId}">${d.name}</option>`)
+            );
+
+            $("#directDtrDropdown").change(function () {
+                const dtrId = $(this).val();
+                if (!dtrId) return $("#outputCard").html("");
+                fillCascadeFromDTR(dtrId);
+                showCard(dtrId);
+            });
+        }
+
+        function fillCascadeFromDTR(dtrId) {
+            const dtr = orgUnits.find(o => o.orgUnitId == dtrId);
+            const feeder = orgUnits.find(o => o.orgUnitId == dtr.parentId);
+            const substation = orgUnits.find(o => o.orgUnitId == feeder.parentId);
+            const zone = orgUnits.find(o => o.orgUnitId == substation.parentId);
+
+            $("#zoneDropdown").val(zone.orgUnitId).trigger("change");
+
+            setTimeout(() => {
+                $("#substationDropdown").val(substation.orgUnitId).trigger("change");
+            }, 200);
+
+            setTimeout(() => {
+                $("#feederDropdown").val(feeder.orgUnitId).trigger("change");
+            }, 400);
+
+            setTimeout(() => {
+                $("#dtrDropdown").val(dtrId);
+            }, 600);
+        }
+
+        function loadZones() {
+            const zones = orgUnits.filter(o => o.type === "Zone");
+            $("#zoneDropdown").append(
+                zones.map(z => `<option value="${z.orgUnitId}">${z.name}</option>`)
+            );
+            $("#zoneDropdown").change(loadSubstations);
+        }
+
+        function loadSubstations() {
+            const zoneId = $("#zoneDropdown").val();
+            $("#substationDropdown").prop("disabled", !zoneId)
+                .html(`<option value="">-- Select Substation --</option>`);
+            $("#feederDropdown").prop("disabled", true)
+                .html(`<option value="">-- Select Feeder --</option>`);
+            $("#dtrDropdown").prop("disabled", true)
+                .html(`<option value="">-- Select DTR --</option>`);
+
+            if (!zoneId) return;
+
+            const subs = orgUnits.filter(o => o.parentId == zoneId && o.type === "Substation");
+            $("#substationDropdown").append(
+                subs.map(s => `<option value="${s.orgUnitId}">${s.name}</option>`)
+            );
+            $("#substationDropdown").change(loadFeeders);
+        }
+
+        function loadFeeders() {
+            const subId = $("#substationDropdown").val();
+            $("#feederDropdown").prop("disabled", !subId)
+                .html(`<option value="">-- Select Feeder --</option>`);
+            $("#dtrDropdown").prop("disabled", true)
+                .html(`<option value="">-- Select DTR --</option>`);
+
+            if (!subId) return;
+
+            const feeders = orgUnits.filter(o => o.parentId == subId && o.type === "Feeder");
+            $("#feederDropdown").append(
+                feeders.map(f => `<option value="${f.orgUnitId}">${f.name}</option>`)
+            );
+            $("#feederDropdown").change(loadDTRs);
+        }
+
+        function loadDTRs() {
+            const feederId = $("#feederDropdown").val();
+            $("#dtrDropdown").prop("disabled", !feederId)
+                .html(`<option value="">-- Select DTR --</option>`);
+
+            if (!feederId) return;
+
+            const dtrs = orgUnits.filter(o => o.parentId == feederId && o.type === "DTR");
+            $("#dtrDropdown").append(
+                dtrs.map(d => `<option value="${d.orgUnitId}">${d.name}</option>`)
+            );
+
+            $("#dtrDropdown").change(function () {
+                const dtrId = $(this).val();
+                if (dtrId) showCard(dtrId);
+            });
+        }
+
+        function showCard(dtrId) {
+            const dtr = orgUnits.find(o => o.orgUnitId == dtrId);
+            const feeder = orgUnits.find(o => o.orgUnitId == dtr.parentId);
+            const substation = orgUnits.find(o => o.orgUnitId == feeder.parentId);
+            const zone = orgUnits.find(o => o.orgUnitId == substation.parentId);
+
+            $("#outputCard").html(`
+                <div class="card shadow-lg p-4 mt-4 border-primary">
+                    <h4 class="fw-bold text-primary mb-3">Selected DTR Details</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Zone:</strong> ${zone.name}</li>
+                        <li class="list-group-item"><strong>Substation:</strong> ${substation.name}</li>
+                        <li class="list-group-item"><strong>Feeder:</strong> ${feeder.name}</li>
+                        <li class="list-group-item"><strong>DTR:</strong> ${dtr.name}</li>
+                    </ul>
+                </div>
+            `);
+        }
+
+        function showAlert(msg, type) {
+            $("#alertBox").html(`
+                <div class="alert alert-${type} alert-dismissible fade show">
+                    ${msg}
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            `);
+        }
+    </script>
+}

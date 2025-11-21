@@ -1,0 +1,244 @@
+﻿@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+    ViewData["Title"] = "User Management";
+}
+
+<!-- ✅ Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+<div class="container py-4">
+    <h2 class="text-center fw-bold text-primary mb-4">User Management</h2>
+
+    <div id="alertBox"></div>
+
+    <!-- Table -->
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-primary text-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Role</th>
+                    <th>Created</th>
+                    <th>Last Login</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable"></tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-center mt-3">
+        <nav>
+            <ul class="pagination" id="pagination"></ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Modal (Edit) -->
+<div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content shadow">
+            <form id="userForm">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="userModalLabel">Edit User</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Username</label>
+                            <input type="text" id="Username" class="form-control shadow-sm border-primary" readonly />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Email</label>
+                            <input type="email" id="Email" class="form-control shadow-sm border-primary" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Phone Number</label>
+                            <input type="text" id="PhoneNumber" class="form-control shadow-sm border-primary" pattern="\d{10}" maxlength="10" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Role</label>
+                            <select id="Role" class="form-select shadow-sm border-primary">
+                                <option value="User">User</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Manager">Manager</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Password (leave blank to keep current)</label>
+                            <input type="password" id="Password" class="form-control shadow-sm border-primary" minlength="8" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success shadow-sm">Save Changes</button>
+                    <button type="button" class="btn btn-secondary shadow-sm" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const apiBase = "https://localhost:7035/api/User";
+
+        let usersData = [];
+        let currentPage = 1;
+        let pageSize = 10;
+
+        // Load all users
+        function loadUsers() {
+            $.get(apiBase, renderTable)
+                .fail(() => showAlert("Failed to load users.", "danger"));
+        }
+
+        // Render table with pagination
+        function renderTable(data) {
+            usersData = data;
+            renderPage();
+        }
+
+        function renderPage() {
+            let start = (currentPage - 1) * pageSize;
+            let end = start + pageSize;
+            let pageItems = usersData.slice(start, end);
+
+            let rows = "";
+            pageItems.forEach(u => {
+                rows += `
+                    <tr>
+                        <td>${u.userId}</td>
+                        <td>${u.username}</td>
+                        <td>${u.email || '-'}</td>
+                        <td>${u.phoneNumber || '-'}</td>
+                        <td><span class="badge bg-info">${u.role}</span></td>
+                        <td>${new Date(u.createdAt).toLocaleString()}</td>
+                        <td>${u.lastLogin ? new Date(u.lastLogin).toLocaleString() : '-'}</td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-outline-primary me-1" onclick="editUser(${u.userId})">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger" onclick="deleteUser(${u.userId})">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </td>
+                    </tr>`;
+            });
+
+            $("#userTable").html(rows);
+            renderPagination();
+        }
+
+        function renderPagination() {
+            let totalPages = Math.ceil(usersData.length / pageSize);
+            let html = "";
+
+            html += `
+                <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                    <a class="page-link" href="#" onclick="goToPage(${currentPage - 1})">Previous</a>
+                </li>`;
+
+            for (let i = 1; i <= totalPages; i++) {
+                html += `
+                    <li class="page-item ${i === currentPage ? 'active' : ''}">
+                        <a class="page-link" href="#" onclick="goToPage(${i})">${i}</a>
+                    </li>`;
+            }
+
+            html += `
+                <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                    <a class="page-link" href="#" onclick="goToPage(${currentPage + 1})">Next</a>
+                </li>`;
+
+            $("#pagination").html(html);
+        }
+
+        function goToPage(page) {
+            let totalPages = Math.ceil(usersData.length / pageSize);
+            if (page < 1 || page > totalPages) return;
+            currentPage = page;
+            renderPage();
+        }
+
+        // Show alert
+        function showAlert(msg, type = "success") {
+            $("#alertBox").html(`
+                <div class="alert alert-${type} alert-dismissible fade show shadow-sm">
+                    ${msg}
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                </div>`);
+        }
+
+        // Update User
+        $("#userForm").submit(function (e) {
+            e.preventDefault();
+            const id = $("#userForm").data("edit-id");
+
+            const dto = {
+                username: $("#Username").val(),
+                email: $("#Email").val(),
+                phoneNumber: $("#PhoneNumber").val(),
+                role: $("#Role").val(),
+                password: $("#Password").val() || null
+            };
+
+            $.ajax({
+                url: `${apiBase}/${id}`,
+                method: "PUT",
+                contentType: "application/json",
+                data: JSON.stringify(dto),
+                success: () => {
+                    showAlert("User updated successfully!");
+                    $("#userModal").modal("hide");
+                    $("#userForm")[0].reset();
+                    $("#userForm").removeData("edit-id");
+                    loadUsers();
+                },
+                error: (xhr) => showAlert(xhr.responseJSON?.message || "Failed to update user.", "danger")
+            });
+        });
+
+        // Edit User
+        function editUser(id) {
+            $.get(`${apiBase}/${id}`, u => {
+                $("#Username").val(u.username);
+                $("#Email").val(u.email);
+                $("#PhoneNumber").val(u.phoneNumber);
+                $("#Role").val(u.role);
+                $("#Password").val("");
+                $("#userForm").data("edit-id", id);
+
+                const modal = new bootstrap.Modal(document.getElementById("userModal"));
+                modal.show();
+            }).fail(() => showAlert("Failed to load user data.", "danger"));
+        }
+
+        // Delete User
+        function deleteUser(id) {
+            if (!confirm("Are you sure you want to delete this user?")) return;
+            $.ajax({
+                url: `${apiBase}/${id}`,
+                method: "DELETE",
+                success: () => {
+                    showAlert("User deleted successfully!");
+                    loadUsers();
+                },
+                error: () => showAlert("Failed to delete user.", "danger")
+            });
+        }
+
+        $(document).ready(loadUsers);
+    </script>
+}

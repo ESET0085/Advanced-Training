@@ -1,0 +1,858 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c# assignments\\AMI_Project_Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\billingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\billingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\meterreadingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\meterreadingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\orgunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\orgunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\meterreadingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\meterreadingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\meterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\meterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\metercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\metercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\orgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\orgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\iorgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\iorgunitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\orgunitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\orgunitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\services\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\services\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\meterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\meterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\imeterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\imeterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\meterreadingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\meterreadingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\consumercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\consumercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\models\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\models\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\models\\meter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\models\\meter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\itariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\itariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\ibillingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\tariffslabdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\tariffslabdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\consumerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\consumerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\data\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\data\\amidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\tariffslabcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\tariffslabcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\models\\meterreading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\models\\meterreading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\tariffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\tariffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\tariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\tariffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\imeterreadingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\imeterreadingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\datarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\datarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\tariffslabrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\tariffslabrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\models\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\models\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\models\\orgunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\models\\orgunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\models\\tariff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\models\\tariff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\interfaces\\itariffslabrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\interfaces\\itariffslabrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|d:\\c# assignments\\ami_project_backend\\ami_project_backend\\dtos\\.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}",
+      "RelativeMoniker": "D:0:0:{5DE192B0-6595-41DF-8F6A-B8D610A7612D}|AMI_Project_Backend\\AMI_Project_Backend.csproj|solutionrelative:ami_project_backend\\dtos\\.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 29,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MeterController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\MeterController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\MeterController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\MeterController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\MeterController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAUwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:31:20.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Consumer.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Consumer.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Models\\Consumer.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Consumer.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Models\\Consumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T06:35:31.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MeterReadingRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\MeterReadingRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\MeterReadingRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\MeterReadingRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\MeterReadingRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:10:13.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConsumerController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\ConsumerController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\ConsumerController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\ConsumerController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\ConsumerController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAkwIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:19:23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MeterDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\MeterDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\MeterDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\MeterDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\MeterDto.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv3MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:57:37.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MeterRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\MeterRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\MeterRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\MeterRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\MeterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:12:19.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IMeterRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IMeterRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IMeterRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IMeterRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IMeterRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCIAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T04:18:08.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Meter.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Meter.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Models\\Meter.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Meter.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Models\\Meter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:11:42.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ITariffRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\ITariffRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\ITariffRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\ITariffRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\ITariffRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:27:08.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IConsumerRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IConsumerRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IConsumerRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IConsumerRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IConsumerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:26:50.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IDataRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IDataRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IDataRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IDataRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IDataRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:14:18.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IBillingService.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IBillingService.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IBillingService.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IBillingService.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IBillingService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:24:41.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IBillingRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IBillingRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IBillingRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IBillingRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IBillingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:21:08.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Helpers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Helpers\\MappingProfile.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Helpers\\MappingProfile.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Helpers\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:08:56.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\UserDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:46:53.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TariffSlabDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\TariffSlabDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\TariffSlabDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\TariffSlabDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\TariffSlabDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:39:45.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\LoginDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:46:38.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ConsumerDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\ConsumerDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\ConsumerDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\ConsumerDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\ConsumerDto.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwBQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:56:56.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BillingDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\BillingDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\BillingDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\BillingDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\BillingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:58:10.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AMIDbContext.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Data\\AMIDbContext.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Data\\AMIDbContext.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Data\\AMIDbContext.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Data\\AMIDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA/wKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:14:59.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T04:19:27.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TariffSlabController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\TariffSlabController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\TariffSlabController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\TariffSlabController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\TariffSlabController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:58:46.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TariffController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\TariffController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\TariffController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\TariffController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\TariffController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:31:47.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrgUnitController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\OrgUnitController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\OrgUnitController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\OrgUnitController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\OrgUnitController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAuwD8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:08:51.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeterReadingController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\MeterReadingController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\MeterReadingController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\MeterReadingController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\MeterReadingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:11:16.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillingController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\BillingController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\BillingController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\BillingController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\BillingController.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAADwv7AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:30:56.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAgwKoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:48:02.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MeterReading.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\MeterReading.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Models\\MeterReading.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\MeterReading.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Models\\MeterReading.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T04:15:09.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ConsumerRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\ConsumerRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\ConsumerRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\ConsumerRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\ConsumerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:06:53.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\RegisterDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:46:17.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Models\\User.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\User.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:21:54.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TariffDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\TariffDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\TariffDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\TariffDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\TariffDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:38:30.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BillingService.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Services\\BillingService.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Services\\BillingService.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Services\\BillingService.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Services\\BillingService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:22:44.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BillingRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\BillingRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\BillingRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\BillingRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\BillingRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:21:29.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TariffRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\TariffRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\TariffRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\TariffRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\TariffRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:28:05.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IMeterReadingRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IMeterReadingRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IMeterReadingRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IMeterReadingRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IMeterReadingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:09:48.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Program.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Program.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Program.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Program.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAcwEQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:32:08.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TariffSlabRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\TariffSlabRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\TariffSlabRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\TariffSlabRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\TariffSlabRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:58:11.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DataRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\DataRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\DataRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\DataRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\DataRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:22:20.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Billing.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Billing.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Models\\Billing.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Billing.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Models\\Billing.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:50:05.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MeterReadingDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\MeterReadingDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\MeterReadingDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\MeterReadingDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\MeterReadingDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T09:46:45.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrgUnitDto.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\OrgUnitDto.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\OrgUnitDto.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\OrgUnitDto.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\OrgUnitDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:22:18.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\appsettings.json",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\appsettings.json",
+              "RelativeToolTip": "AMI_Project_Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-05T04:55:10.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAzwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:03:36.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "OrgUnit.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\OrgUnit.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Models\\OrgUnit.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\OrgUnit.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Models\\OrgUnit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T04:15:16.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Tariff.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Tariff.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Models\\Tariff.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Models\\Tariff.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Models\\Tariff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T04:15:26.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\Repository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:04:41.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrgUnitRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\OrgUnitRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Repositories\\OrgUnitRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Repositories\\OrgUnitRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Repositories\\OrgUnitRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:12:57.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ITariffSlabRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\ITariffSlabRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\ITariffSlabRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\ITariffSlabRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\ITariffSlabRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:57:39.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IOrgUnitRepository.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IOrgUnitRepository.cs",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\Interfaces\\IOrgUnitRepository.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\Interfaces\\IOrgUnitRepository.cs",
+              "RelativeToolTip": "AMI_Project_Backend\\Interfaces\\IOrgUnitRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T06:12:15.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": ".editorconfig",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\.editorconfig",
+              "RelativeDocumentMoniker": "AMI_Project_Backend\\DTOs\\.editorconfig",
+              "ToolTip": "D:\\c# assignments\\AMI_Project_Backend\\AMI_Project_Backend\\DTOs\\.editorconfig",
+              "RelativeToolTip": "AMI_Project_Backend\\DTOs\\.editorconfig",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-10T06:21:55.784Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

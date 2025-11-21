@@ -1,0 +1,487 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c# assignments\\AMI_Frontend01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\consumer\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\consumer\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\user\\userdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\user\\userdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\billing\\mybills.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\billing\\mybills.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\meter\\meterdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\meter\\meterdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\tariff\\tariffdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\tariff\\tariffdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\shared\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\shared\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\meterreadingbulkuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\meterreadingbulkuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\meterreadingbulkupload\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\meterreadingbulkupload\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\meterreading\\meterreadingdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\meterreading\\meterreadingdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\meterreadingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\meterreadingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\billing\\billingdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\billing\\billingdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\tariffslab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\tariffslab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\meter\\mymeters.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\meter\\mymeters.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\orgunit\\orgunitdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\orgunit\\orgunitdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\consumer\\consumerdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\consumer\\consumerdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\views\\tariffslab\\tariffslabdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\views\\tariffslab\\tariffslabdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\orgunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\orgunitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|d:\\c# assignments\\ami_frontend01\\ami_frontend01\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B50DC9C-CD00-4E04-A6B7-70F8014EF35D}|AMI_Frontend01\\AMI_Frontend01.csproj|solutionrelative:ami_frontend01\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T08:49:49.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T08:48:04.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\MeterReadingBulkUpload\\Index.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\MeterReadingBulkUpload\\Index.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\MeterReadingBulkUpload\\Index.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\MeterReadingBulkUpload\\Index.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAF0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T08:47:11.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MeterReadingBulkUploadController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\MeterReadingBulkUploadController.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\MeterReadingBulkUploadController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\MeterReadingBulkUploadController.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\MeterReadingBulkUploadController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswGgAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T08:46:05.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T10:30:40.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAswN4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T09:18:37.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MyMeters.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Meter\\MyMeters.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Meter\\MyMeters.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Meter\\MyMeters.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Meter\\MyMeters.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T05:17:26.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TariffSlabData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\TariffSlab\\TariffSlabData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\TariffSlab\\TariffSlabData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\TariffSlab\\TariffSlabData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\TariffSlab\\TariffSlabData.cshtml",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAkwPkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T13:22:47.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAcwKkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T09:19:35.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyProfile.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Consumer\\MyProfile.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Consumer\\MyProfile.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Consumer\\MyProfile.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Consumer\\MyProfile.cshtml",
+              "ViewState": "AgIAACYBAAAAAAAAAAAswEEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T07:00:33.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MeterData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Meter\\MeterData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Meter\\MeterData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Meter\\MeterData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Meter\\MeterData.cshtml",
+              "ViewState": "AgIAAAwEAAAAAAAAAAAswCcEAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T09:48:48.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ConsumerData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Consumer\\ConsumerData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Consumer\\ConsumerData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Consumer\\ConsumerData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Consumer\\ConsumerData.cshtml",
+              "ViewState": "AgIAABUBAAAAAAAAAAAIwDkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T13:44:12.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyBills.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Billing\\MyBills.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Billing\\MyBills.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Billing\\MyBills.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Billing\\MyBills.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T07:19:38.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BillingData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Billing\\BillingData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Billing\\BillingData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Billing\\BillingData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Billing\\BillingData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T11:10:54.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TariffData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Tariff\\TariffData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Tariff\\TariffData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Tariff\\TariffData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Tariff\\TariffData.cshtml",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAkwOcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T13:17:53.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MeterReadingData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\MeterReading\\MeterReadingData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\MeterReading\\MeterReadingData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\MeterReading\\MeterReadingData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\MeterReading\\MeterReadingData.cshtml",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAIwEUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T06:23:35.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashBoard.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Shared\\DashBoard.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\Shared\\DashBoard.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\Shared\\DashBoard.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\Shared\\DashBoard.cshtml",
+              "ViewState": "AgIAANgAAAAAAAAAAAAswPMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T09:55:28.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\User\\UserData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\User\\UserData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\User\\UserData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\User\\UserData.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T11:40:41.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrgUnitData.cshtml",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\OrgUnit\\OrgUnitData.cshtml",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Views\\OrgUnit\\OrgUnitData.cshtml",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Views\\OrgUnit\\OrgUnitData.cshtml",
+              "RelativeToolTip": "AMI_Frontend01\\Views\\OrgUnit\\OrgUnitData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T11:29:06.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrgUnitController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\OrgUnitController.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\OrgUnitController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\OrgUnitController.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\OrgUnitController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:27:54.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T09:18:09.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TariffController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\TariffController.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\TariffController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\TariffController.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\TariffController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:17:05.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TariffSlab.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\TariffSlab.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\TariffSlab.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\TariffSlab.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\TariffSlab.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:22:07.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:39:52.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Program.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Program.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Program.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T09:44:33.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MeterReadingController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\MeterReadingController.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\MeterReadingController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\MeterReadingController.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\MeterReadingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:56:55.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AMI_Frontend01\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\c# assignments\\AMI_Frontend01\\AMI_Frontend01\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AMI_Frontend01\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:07:06.791Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

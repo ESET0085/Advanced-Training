@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/DashBoard.cshtml";
+}
+
+<style>
+    /* Page background */
+    body {
+        background: #FAF8F2 !important;
+        font-family: 'Segoe UI', sans-serif;
+        color: #1B4332 !important;
+    }
+
+    /* Heading */
+    .welcome-title {
+        color: #2D6A4F;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+    /* Subtext */
+    .welcome-text {
+        color: #40916C;
+        font-size: 1.2rem;
+    }
+
+    /* Card styling */
+    .home-card {
+        background: #FFFFFF;
+        padding: 30px;
+        margin-top: 40px;
+        border-radius: 14px;
+        border: 1px solid #B7E4C7;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Link styling */
+    .home-link {
+        color: #2D6A4F;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        .home-link:hover {
+            color: #52B788;
+            text-decoration: underline;
+        }
+</style>
+
+<div class="container text-center">
+    <h1 class="display-4 welcome-title">Welcome to Your Dashboard</h1>
+
+    <div class="home-card mx-auto col-md-8">
+        <p class="welcome-text">
+            Explore and manage your system using the navigation menu.
+        </p>
+        <p>
+            Learn more about building Web apps with ASP.NET Core:
+            <br />
+            <a class="home-link" href="https://learn.microsoft.com/aspnet/core" target="_blank">
+                ASP.NET Core Documentation
+            </a>
+        </p>
+    </div>
+</div>

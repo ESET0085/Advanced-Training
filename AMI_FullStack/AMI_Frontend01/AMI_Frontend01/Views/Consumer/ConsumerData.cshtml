@@ -1,0 +1,313 @@
+﻿@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+    ViewData["Title"] = "Consumer Management";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+<!-- 🌿 Forest Green + Cream Theme -->
+<style>
+    body {
+        background: #FAF8F2 !important;
+        font-family: 'Segoe UI', sans-serif;
+        color: #3B3B3B;
+    }
+
+    h2 {
+        color: #2D6A4F !important;
+    }
+
+    .form-control, .form-select {
+        background: #FFFFFF;
+        border: 1px solid #B7E4C7;
+        border-radius: 8px;
+    }
+
+    .btn-primary {
+        background: #2D6A4F !important;
+    }
+
+    .btn-success {
+        background: #52B788 !important;
+    }
+
+    .table thead {
+        background: #2D6A4F !important;
+        color: white !important;
+    }
+
+    .table-responsive {
+        border-radius: 12px;
+        border: 1px solid #B7E4C7;
+        background: #FFFFFF;
+    }
+</style>
+
+<div class="container py-4">
+    <h2 class="text-center fw-bold mb-4">Consumer Management</h2>
+
+    <div id="alertBox"></div>
+
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <input type="number" id="searchConsumerId" class="form-control" placeholder="Search by Consumer ID..." />
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" onclick="filterConsumers()">Filter</button>
+            <button class="btn btn-secondary" onclick="resetFilter()">Reset</button>
+        </div>
+        <div class="col-md-6 text-end">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#consumerModal">
+                <i class="bi bi-plus-circle"></i> Add Consumer
+            </button>
+        </div>
+    </div>
+
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-hover table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>OrgUnitId</th>
+                    <th>TariffId</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="consumerTable"></tbody>
+        </table>
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <button class="btn btn-primary btn-sm" onclick="prevPage()">Previous</button>
+        <span id="pageInfo" class="fw-bold text-success"></span>
+        <button class="btn btn-primary btn-sm" onclick="nextPage()">Next</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="consumerModal" tabindex="-1" aria-labelledby="consumerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form id="consumerForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consumerModalLabel">Add Consumer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="hidden" id="ConsumerId" />
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Name *</label>
+                            <input type="text" id="Name" class="form-control" required maxlength="100" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Status *</label>
+                            <select id="Status" class="form-select" required>
+                                <option value="Active">Active</option>
+                                <option value="Inactive">Inactive</option>
+                                <option value="Suspended">Suspended</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Address</label>
+                            <input type="text" id="Address" class="form-control" maxlength="250" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Phone</label>
+                            <input type="text" id="Phone" class="form-control" maxlength="10" pattern="\d{10}" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="Email" class="form-control" maxlength="150" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">OrgUnitId *</label>
+                            <input type="number" id="OrgUnitId" class="form-control" required min="1" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">TariffId *</label>
+                            <input type="number" id="TariffId" class="form-control" required min="1" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const apiBase = "https://localhost:7035/api/Consumer";
+        let allConsumers = [];
+
+        // Pagination variables
+        let currentPage = 1;
+        const rowsPerPage = 10;
+
+        function loadConsumers() {
+            $.get(apiBase, function (data) {
+                allConsumers = data;
+                currentPage = 1;
+                renderTable(allConsumers);
+            }).fail(() => showAlert("Cannot load consumers", "danger"));
+        }
+
+        function renderTable(data) {
+            const totalPages = Math.ceil(data.length / rowsPerPage);
+            if (currentPage > totalPages) currentPage = totalPages || 1;
+
+            const start = (currentPage - 1) * rowsPerPage;
+            const end = start + rowsPerPage;
+            const pageData = data.slice(start, end);
+
+            let rows = "";
+            pageData.forEach(c => {
+                rows += `
+                    <tr>
+                        <td>${c.consumerId}</td>
+                        <td>${c.name}</td>
+                        <td>${c.address || ""}</td>
+                        <td>${c.phone || ""}</td>
+                        <td>${c.email || ""}</td>
+                        <td>${c.orgUnitId}</td>
+                        <td>${c.tariffId}</td>
+                        <td>${c.status}</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary me-1" onclick="editConsumer(${c.consumerId})">
+                                <i class="bi bi-pencil"></i> Edit
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger" onclick="deleteConsumer(${c.consumerId})">
+                                <i class="bi bi-trash"></i> Delete
+                            </button>
+                        </td>
+                    </tr>`;
+            });
+
+            $("#consumerTable").html(rows);
+            $("#pageInfo").html(`Page ${currentPage} of ${totalPages || 1}`);
+        }
+
+        function nextPage() {
+            const totalPages = Math.ceil(allConsumers.length / rowsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                filterConsumers();
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                filterConsumers();
+            }
+        }
+
+        function showAlert(msg, type = "success") {
+            $("#alertBox").html(`<div class="alert alert-${type} alert-dismissible fade show shadow-sm">
+                ${msg}
+                <button class="btn-close" data-bs-dismiss="alert"></button>
+            </div>`);
+        }
+
+        $("#consumerForm").submit(function (e) {
+            e.preventDefault();
+
+            const id = $("#ConsumerId").val();
+            const dto = {
+                consumerId: id ? parseInt(id) : 0,
+                name: $("#Name").val(),
+                address: $("#Address").val(),
+                phone: $("#Phone").val(),
+                email: $("#Email").val(),
+                orgUnitId: parseInt($("#OrgUnitId").val()),
+                tariffId: parseInt($("#TariffId").val()),
+                status: $("#Status").val()
+            };
+
+            const method = id ? "PUT" : "POST";
+            const url = id ? `${apiBase}/${id}` : apiBase;
+
+            $.ajax({
+                url,
+                method,
+                contentType: "application/json",
+                data: JSON.stringify(dto),
+                success: () => {
+                    showAlert(id ? "Consumer updated successfully!" : "Consumer added successfully!");
+                    $("#consumerModal").modal("hide");
+                    $("#consumerForm")[0].reset();
+                    $("#ConsumerId").val("");
+                    loadConsumers();
+                },
+                error: (xhr) => {
+                    const msg = xhr.responseJSON?.message || "Failed to save consumer.";
+                    showAlert(msg, "danger");
+                }
+            });
+        });
+
+        function editConsumer(id) {
+            const consumer = allConsumers.find(c => c.consumerId === id);
+            if (!consumer) return showAlert("Consumer not found", "danger");
+
+            $("#ConsumerId").val(consumer.consumerId);
+            $("#Name").val(consumer.name);
+            $("#Address").val(consumer.address || "");
+            $("#Phone").val(consumer.phone || "");
+            $("#Email").val(consumer.email || "");
+            $("#OrgUnitId").val(consumer.orgUnitId);
+            $("#TariffId").val(consumer.tariffId);
+            $("#Status").val(consumer.status);
+
+            $("#consumerModalLabel").text("Edit Consumer");
+
+            new bootstrap.Modal(document.getElementById("consumerModal")).show();
+        }
+
+        function deleteConsumer(id) {
+            if (!confirm("Are you sure you want to delete this consumer?")) return;
+
+            $.ajax({
+                url: `${apiBase}/${id}`,
+                method: "DELETE",
+                success: () => {
+                    showAlert("Consumer deleted successfully!");
+                    loadConsumers();
+                },
+                error: () => showAlert("Failed to delete consumer.", "danger")
+            });
+        }
+
+        function filterConsumers() {
+            const filterId = parseInt($("#searchConsumerId").val());
+            const filtered = filterId
+                ? allConsumers.filter(c => c.consumerId === filterId)
+                : allConsumers;
+
+            renderTable(filtered);
+        }
+
+        function resetFilter() {
+            $("#searchConsumerId").val("");
+            renderTable(allConsumers);
+        }
+
+        $(document).ready(loadConsumers);
+    </script>
+}

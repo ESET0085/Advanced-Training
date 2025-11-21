@@ -1,0 +1,311 @@
+﻿@* @{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5" style="max-width: 450px;">
+    <h3 class="text-center mb-4">Register</h3>
+
+    <div id="alertBox"></div>
+
+    <form id="registerForm">
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email (optional)</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Phone (optional)</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Role (optional)</label>
+            <select class="form-select" id="role" name="role">
+                <option value="User" selected>User</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Register</button>
+
+        <div class="text-center mt-3">
+            <a href="/Auth/Login">Already have an account? Login</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#registerForm").submit(function (e) {
+            e.preventDefault();
+
+            var data = {
+                username: $("#username").val(),
+                password: $("#password").val(),
+                email: $("#email").val(),
+                phoneNumber: $("#phone").val(),
+                role: $("#role").val()
+            };
+
+            $.ajax({
+                url: "https://localhost:7035/api/Auth/register", // ✅ Update port to your backend
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(data),
+                success: function (response) {
+                    $("#alertBox").html(`<div class="alert alert-success">${response.message}</div>`);
+                    setTimeout(() => window.location.href = "/Auth/Login", 1500);
+                },
+                error: function (xhr) {
+                    let msg = xhr.responseJSON?.message || "Registration failed!";
+                    $("#alertBox").html(`<div class="alert alert-danger">${msg}</div>`);
+                }
+            });
+
+        });
+    </script>
+} *@
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - AMI System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* Slate Theme */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px 0; /* Padding for scrolling on smaller screens */
+        }
+
+        .register-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 500px; /* Slightly wider than login */
+            padding: 2.5rem;
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        .brand-icon {
+            background: #e0f2fe;
+            color: #0284c7;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1.8rem;
+        }
+
+        .form-control, .form-select {
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+        }
+
+            .form-control:focus, .form-select:focus {
+                box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+                border-color: #0ea5e9;
+            }
+
+        .input-group-text {
+            background-color: #f8fafc;
+            border-color: #cbd5e1;
+            color: #64748b;
+        }
+
+        .btn-register {
+            background-color: #0ea5e9; /* Consistent Blue Theme */
+            border: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-weight: 600;
+            color: white;
+            transition: all 0.2s;
+        }
+
+            .btn-register:hover {
+                background-color: #0284c7;
+                transform: translateY(-1px);
+                color: white;
+            }
+
+        .toggle-password {
+            cursor: pointer;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 0.3rem;
+        }
+
+        {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-card">
+        <div class="brand-icon">
+            <i class="bi bi-person-plus-fill"></i>
+        </div>
+        <h4 class="text-center fw-bold text-dark mb-1">Create Account</h4>
+        <p class="text-center text-muted mb-4">Join the AMI Smart Grid System</p>
+
+        <div id="alertBox"></div>
+
+        <form id="registerForm">
+
+            <div class="mb-3">
+                <label for="username">Username <span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Choose a username" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email (Optional)</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone">Phone (Optional)</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Mobile number">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="role">Role</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
+                    <select class="form-select" id="role" name="role">
+                        <option value="User" selected>User</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="password">Password <span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" required>
+                    <span class="input-group-text toggle-password" id="togglePassword">
+                        <i class="bi bi-eye-slash"></i>
+                    </span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-register w-100" id="registerBtn">
+                Create Account
+            </button>
+
+            <div class="text-center mt-4">
+                <span class="text-muted small">Already have an account?</span>
+                <a href="/Auth/Login" class="text-decoration-none fw-bold ms-1" style="color: #0ea5e9;">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // 1. Toggle Password Visibility
+        $("#togglePassword").click(function() {
+            const input = $("#password");
+            const icon = $(this).find("i");
+
+            if (input.attr("type") === "password") {
+                input.attr("type", "text");
+                icon.removeClass("bi-eye-slash").addClass("bi-eye");
+            } else {
+                input.attr("type", "password");
+                icon.removeClass("bi-eye").addClass("bi-eye-slash");
+            }
+        });
+
+        // 2. Registration Logic (Functionality Preserved)
+        $("#registerForm").submit(function (e) {
+            e.preventDefault();
+
+            // UI: Button Loading State
+            const btn = $("#registerBtn");
+            const originalText = btn.html();
+            btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Creating...');
+            $("#alertBox").html(''); // Clear previous alerts
+
+            var data = {
+                username: $("#username").val(),
+                password: $("#password").val(),
+                email: $("#email").val(),
+                phoneNumber: $("#phone").val(),
+                role: $("#role").val()
+            };
+
+            $.ajax({
+                // ✅ Keeping your exact API port
+                url: "https://localhost:7035/api/Auth/register",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(data),
+                success: function (response) {
+                    $("#alertBox").html(`<div class="alert alert-success py-2 d-flex align-items-center"><i class="bi bi-check-circle-fill me-2"></i> ${response.message}</div>`);
+
+                    // Redirect after 1.5 seconds
+                    setTimeout(() => window.location.href = "/Auth/Login", 1500);
+                },
+                error: function (xhr) {
+                    // Reset Button
+                    btn.prop("disabled", false).html(originalText);
+
+                    let msg = xhr.responseJSON?.message || "Registration failed!";
+                    $("#alertBox").html(`<div class="alert alert-danger py-2 d-flex align-items-center"><i class="bi bi-exclamation-circle-fill me-2"></i> ${msg}</div>`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿using System.Linq.Expressions;
+
+namespace AMI_Project_Backend.Interfaces
+{
+    public interface IRepository<T> where T : class
+    {
+        Task<IEnumerable<T>> GetAllAsync();
+        Task<T?> GetByIdAsync(object id);
+        Task AddAsync(T entity);
+        void Update(T entity);
+        void Delete(T entity);
+        Task SaveAsync();
+        
+    }
+}

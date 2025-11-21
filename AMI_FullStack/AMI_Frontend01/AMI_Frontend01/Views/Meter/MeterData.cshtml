@@ -1,0 +1,1064 @@
+﻿@* @{
+    Layout = "~/Views/Shared/DashBoard.cshtml";
+    ViewData["Title"] = "Meter Management Dashboard";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+<style>
+    :root {
+        --green-dark: #0b3d2e;
+        --green-main: #146b45;
+        --green-light: #cfe9dd;
+        --cream-bg: #f8f5ee;
+        --text-dark: #1f1f1f;
+        --text-light: #ffffff;
+    }
+
+    body {
+        background: var(--cream-bg) !important;
+    }
+
+    .card {
+        border-radius: 15px;
+        border: 1px solid var(--green-light);
+        background: var(--cream-bg);
+        box-shadow: 0 3px 8px rgba(0,0,0,0.09);
+    }
+
+    .card-header {
+        background: var(--green-dark) !important;
+        color: white !important;
+    }
+
+    .form-control, .form-select {
+        border-radius: 10px;
+        border: 1px solid var(--green-light);
+    }
+
+    .btn-primary {
+        background: var(--green-main) !important;
+        border-color: var(--green-main) !important;
+    }
+
+    .status-active {
+        background: var(--green-main) !important;
+    }
+
+    .status-inactive {
+        background: #8b9a9f !important;
+    }
+
+    .status-faulty {
+        background: #ba2f2f !important;
+    }
+
+    .status-disconnected {
+        background: #f2d16d !important;
+        color: #000 !important;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 999;
+    }
+
+    #loadingSpinner {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+</style>
+
+<div class="container-fluid py-4">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary mb-2">
+            <i class="bi bi-speedometer2"></i> Meter Management Dashboard
+        </h2>
+        <p class="text-muted">Manage and monitor all smart meters</p>
+    </div>
+
+    <div id="alertContainer" class="mb-3"></div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5><i class="bi bi-search"></i> Search Meters</h5>
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Serial Number</label>
+                    <input type="text" id="serialSearch" class="form-control" placeholder="MTR-10001">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Consumer ID</label>
+                    <input type="number" id="consumerSearch" class="form-control" placeholder="12345">
+                </div>
+                <div class="col-md-4 d-flex align-items-end gap-2">
+                    <button id="btnSearch" class="btn btn-primary w-50"><i class="bi bi-search"></i> Search</button>
+                    <button id="btnReset" class="btn btn-secondary w-50"><i class="bi bi-arrow-clockwise"></i> Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <span class="badge bg-success me-2">Active: <span id="activeCount">0</span></span>
+            <span class="badge bg-secondary me-2">Inactive: <span id="inactiveCount">0</span></span>
+            <span class="badge bg-danger me-2">Faulty: <span id="faultyCount">0</span></span>
+            <span class="badge bg-warning text-dark me-2">Disconnected: <span id="disconnectedCount">0</span></span>
+            <span class="badge bg-info">Total: <span id="totalCount">0</span></span>
+        </div>
+
+        <div class="col-md-4 text-end">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#meterModal" onclick="resetForm()">
+                <i class="bi bi-plus-circle"></i> Add Meter
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h5><i class="bi bi-table"></i> All Meters</h5>
+        </div>
+        <div class="card-body p-0">
+            <table class="table table-hover mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Serial No</th>
+                        <th>Consumer ID</th>
+                        <th>IP</th>
+                        <th>ICCID</th>
+                        <th>IMSI</th>
+                        <th>Manufacturer</th>
+                        <th>Firmware</th>
+                        <th>Category</th>
+                        <th>Install Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="meterTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="pagination justify-content-center mt-3" id="pagination"></ul>
+    </nav>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<div id="loadingSpinner">
+    <div class="spinner-border text-primary" style="width:4rem;height:4rem"></div>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="meterModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="modalTitle">Add Meter</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="meterForm">
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="fw-bold">Serial No</label>
+                            <input id="serialNo" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Consumer ID</label>
+                            <input id="consumerId" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">IP Address</label>
+                            <input id="ipAddress" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">ICCID</label>
+                            <input id="iccid" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">IMSI</label>
+                            <input id="imsi" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Manufacturer</label>
+                            <input id="manufacturer" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Firmware</label>
+                            <input id="firmware" type="text" class="form-control" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Category</label>
+                            <select id="category" class="form-select">
+                                <option value="SinglePhase">Single Phase</option>
+                                <option value="ThreePhase">Three Phase</option>
+                                <option value="CT">CT</option>
+                                <option value="LT">LT</option>
+                                <option value="HT">HT</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Install Date</label>
+                            <input id="installDate" type="date" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Status</label>
+                            <select id="status" class="form-select">
+                                <option>Active</option>
+                                <option>Inactive</option>
+                                <option>Faulty</option>
+                                <option>Disconnected</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="btnSave" class="btn btn-primary">Save</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const apiBase = "https://localhost:7035/api/Meter";
+
+        let allMeters = [];
+        let isEditMode = false;
+        let editSerial = null;
+        let currentPage = 1;
+        let rowsPerPage = 10;
+
+        /* LOADING */
+        function showLoading() { $("#overlay, #loadingSpinner").show(); }
+        function hideLoading() { $("#overlay, #loadingSpinner").hide(); }
+
+        /* ALERTS */
+        function showAlert(message, type='danger', timeout=5000) {
+            const html = `
+                <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>`;
+            $("#alertContainer").html(html);
+            if (timeout) setTimeout(() => $("#alertContainer").html(''), timeout);
+        }
+
+        /* LOAD ALL */
+        function loadMeters() {
+            showLoading();
+            $.get(apiBase)
+                .done(res => {
+                    allMeters = res;
+                    displayPage(1);
+                    updateStats(res);
+                })
+                .fail(() => showAlert("Failed to load meters"))
+                .always(hideLoading);
+        }
+
+        /* RENDER TABLE */
+        function renderTable(data) {
+            let html = "";
+            if (!data.length)
+                html = `<tr><td colspan="11" class="text-center py-5">No meters found</td></tr>`;
+            else
+                data.forEach(m => {
+                    const statusClass = `status-${m.status.toLowerCase()}`;
+                    html += `
+                        <tr>
+                            <td>${m.serialNo}</td>
+                            <td>${m.consumerId}</td>
+                            <td>${m.ipAddress}</td>
+                            <td>${m.iccid}</td>
+                            <td>${m.imsi}</td>
+                            <td>${m.manufacturer}</td>
+                            <td>${m.firmware ?? "-"}</td>
+                            <td>${m.category}</td>
+                            <td>${formatDate(m.installDate)}</td>
+                            <td><span class="badge ${statusClass}">${m.status}</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" onclick="editMeter('${m.serialNo}')">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger" onclick="deleteMeter('${m.serialNo}')">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>`;
+                });
+
+            $("#meterTable").html(html);
+        }
+
+        /* FORMAT DATE */
+        function formatDate(dateStr) {
+            const d = new Date(dateStr);
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return `${d.getFullYear()}-${month}-${day}`;
+        }
+
+        /* PAGINATION */
+        function displayPage(page) {
+            currentPage = page;
+            const start = (page - 1) * rowsPerPage;
+            renderTable(allMeters.slice(start, start + rowsPerPage));
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(allMeters.length / rowsPerPage);
+            let html = "";
+            for (let i = 1; i <= totalPages; i++)
+                html += `
+                    <li class="page-item ${i === currentPage ? 'active' : ''}">
+                        <button class="page-link" onclick="displayPage(${i})">${i}</button>
+                    </li>`;
+            $("#pagination").html(html);
+        }
+
+        /* STATS */
+        function updateStats(list) {
+            $("#activeCount").text(list.filter(x => x.status === "Active").length);
+            $("#inactiveCount").text(list.filter(x => x.status === "Inactive").length);
+            $("#faultyCount").text(list.filter(x => x.status === "Faulty").length);
+            $("#disconnectedCount").text(list.filter(x => x.status === "Disconnected").length);
+            $("#totalCount").text(list.length);
+        }
+
+        /* RESET FORM - UPDATED */
+        function resetForm() {
+            isEditMode = false;
+            editSerial = null;
+            $("#meterForm")[0].reset();
+
+            $("#modalTitle").text("Add Meter");
+
+            // Ensure both unique IDs are editable for new entries
+            $("#serialNo").prop("disabled", false);
+            $("#consumerId").prop("disabled", false);
+        }
+
+        /* EDIT METER - UPDATED */
+        function editMeter(serialNo) {
+            isEditMode = true;
+            editSerial = serialNo;
+
+            showLoading();
+            $.get(`${apiBase}/${serialNo}`)
+                .done(data => {
+                    $("#serialNo").val(data.serialNo);
+                    $("#consumerId").val(data.consumerId);
+                    $("#ipAddress").val(data.ipAddress);
+                    $("#iccid").val(data.iccid);
+                    $("#imsi").val(data.imsi);
+                    $("#manufacturer").val(data.manufacturer);
+                    $("#firmware").val(data.firmware || "");
+                    $("#category").val(data.category);
+
+                    const installDate = new Date(data.installDate);
+                    const formattedDate = installDate.toISOString().split('T')[0];
+                    $("#installDate").val(formattedDate);
+
+                    $("#status").val(data.status);
+
+                    // Disable editing for Serial No AND Consumer ID
+                    $("#serialNo").prop("disabled", true);
+                    $("#consumerId").prop("disabled", true);
+
+                    $("#modalTitle").text("Edit Meter");
+                    $("#meterModal").modal("show");
+                })
+                .fail(() => showAlert("Failed to load meter data"))
+                .always(hideLoading);
+        }
+
+        /* SAVE METER */
+        function saveMeter() {
+            const dto = {
+                serialNo: $("#serialNo").val().trim(),
+                consumerId: $("#consumerId").val().trim(),
+                ipAddress: $("#ipAddress").val().trim(),
+                iccid: $("#iccid").val().trim(),
+                imsi: $("#imsi").val().trim(),
+                manufacturer: $("#manufacturer").val().trim(),
+                firmware: $("#firmware").val().trim(),
+                category: $("#category").val(),
+                installDate: $("#installDate").val(),
+                status: $("#status").val()
+            };
+
+            const url = isEditMode ? `${apiBase}/${editSerial}` : apiBase;
+            const method = isEditMode ? "PUT" : "POST";
+
+            showLoading();
+
+            $.ajax({
+                url: url,
+                method: method,
+                contentType: "application/json",
+                data: JSON.stringify(dto)
+            })
+            .done(() => {
+                $("#meterModal").modal("hide");
+                loadMeters();
+                showAlert(`Meter ${isEditMode ? 'updated' : 'added'} successfully`, "success");
+            })
+            .fail(xhr => {
+                let msg = "Error saving meter";
+                if (xhr.responseJSON) {
+                    if (xhr.responseJSON.errors) {
+                        msg = Object.values(xhr.responseJSON.errors).flat().join("<br>");
+                    } else if (xhr.responseJSON.message) {
+                        msg = xhr.responseJSON.message;
+                    } else if (typeof xhr.responseJSON === "string") {
+                        msg = xhr.responseJSON;
+                    }
+                }
+                showAlert(msg, "danger", 7000);
+            })
+            .always(() => hideLoading());
+        }
+
+        /* DELETE METER */
+        function deleteMeter(serialNo) {
+            if (!confirm(`Delete meter ${serialNo}?`)) return;
+
+            showLoading();
+            $.ajax({
+                url: `${apiBase}/${serialNo}`,
+                method: "DELETE"
+            })
+            .done(() => {
+                showAlert("Meter deleted successfully", "success");
+                loadMeters();
+            })
+            .fail(() => showAlert("Delete failed"))
+            .always(hideLoading);
+        }
+
+        /* SEARCH */
+        $("#btnSearch").click(() => {
+            let ser = $("#serialSearch").val().trim();
+            let id = $("#consumerSearch").val().trim();
+            let list = allMeters;
+
+            if (ser) list = list.filter(x => x.serialNo.includes(ser));
+            if (id) list = list.filter(x => x.consumerId.toString().includes(id));
+
+            renderTable(list);
+        });
+
+        $("#btnReset").click(() => {
+            $("#serialSearch").val("");
+            $("#consumerSearch").val("");
+            loadMeters();
+        });
+
+        /* INITIALIZE */
+        $(document).ready(() => {
+            $("#btnSave").off("click").on("click", saveMeter);
+            loadMeters();
+        });
+
+    </script>
+} *@
+
+@{
+    Layout = "~/Views/Shared/DashBoard.cshtml";
+    ViewData["Title"] = "Meter Management Dashboard";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+<style>
+    :root {
+        --green-dark: #0b3d2e;
+        --green-main: #146b45;
+        --green-light: #cfe9dd;
+        --cream-bg: #f8f5ee;
+        --text-dark: #1f1f1f;
+        --text-light: #ffffff;
+    }
+
+    body {
+        background: var(--cream-bg) !important;
+    }
+
+    .card {
+        border-radius: 15px;
+        border: 1px solid var(--green-light);
+        background: var(--cream-bg);
+        box-shadow: 0 3px 8px rgba(0,0,0,0.09);
+    }
+
+    .card-header {
+        background: var(--green-dark) !important;
+        color: white !important;
+    }
+
+    .form-control, .form-select {
+        border-radius: 10px;
+        border: 1px solid var(--green-light);
+    }
+
+    .btn-primary {
+        background: var(--green-main) !important;
+        border-color: var(--green-main) !important;
+    }
+
+    .status-active {
+        background: var(--green-main) !important;
+    }
+
+    .status-inactive {
+        background: #8b9a9f !important;
+    }
+
+    .status-faulty {
+        background: #ba2f2f !important;
+    }
+
+    .status-disconnected {
+        background: #f2d16d !important;
+        color: #000 !important;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 999;
+    }
+
+    #loadingSpinner {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+</style>
+
+<div class="container-fluid py-4">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary mb-2">
+            <i class="bi bi-speedometer2"></i> Meter Management Dashboard
+        </h2>
+        <p class="text-muted">Manage and monitor all smart meters</p>
+    </div>
+
+    <div id="alertContainer" class="mb-3"></div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5><i class="bi bi-search"></i> Search & Filter Meters</h5>
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Serial Number</label>
+                    <input type="text" id="serialSearch" class="form-control" placeholder="MTR-10001">
+                </div>
+
+                <div class="col-md-2">
+                    <label class="form-label fw-bold">Consumer ID</label>
+                    <input type="number" id="consumerSearch" class="form-control" placeholder="12345">
+                </div>
+
+                <div class="col-md-2">
+                    <label class="form-label fw-bold">Install Date</label>
+                    <input type="date" id="dateSearch" class="form-control">
+                </div>
+
+                <div class="col-md-2">
+                    <label class="form-label fw-bold">Status</label>
+                    <select id="statusSearch" class="form-select">
+                        <option value="">All Statuses</option>
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                        <option value="Faulty">Faulty</option>
+                        <option value="Disconnected">Disconnected</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-end gap-2">
+                    <button id="btnSearch" class="btn btn-primary w-100"><i class="bi bi-search"></i> Search</button>
+                    <button id="btnReset" class="btn btn-secondary w-50"><i class="bi bi-arrow-clockwise"></i> Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <span class="badge bg-success me-2">Active: <span id="activeCount">0</span></span>
+            <span class="badge bg-secondary me-2">Inactive: <span id="inactiveCount">0</span></span>
+            <span class="badge bg-danger me-2">Faulty: <span id="faultyCount">0</span></span>
+            <span class="badge bg-warning text-dark me-2">Disconnected: <span id="disconnectedCount">0</span></span>
+            <span class="badge bg-info">Total: <span id="totalCount">0</span></span>
+        </div>
+
+        <div class="col-md-4 text-end">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#meterModal" onclick="resetForm()">
+                <i class="bi bi-plus-circle"></i> Add Meter
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h5><i class="bi bi-table"></i> All Meters</h5>
+        </div>
+        <div class="card-body p-0">
+            <table class="table table-hover mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Serial No</th>
+                        <th>Consumer ID</th>
+                        <th>IP</th>
+                        <th>ICCID</th>
+                        <th>IMSI</th>
+                        <th>Manufacturer</th>
+                        <th>Firmware</th>
+                        <th>Category</th>
+                        <th>Install Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="meterTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="pagination justify-content-center mt-3" id="pagination"></ul>
+    </nav>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<div id="loadingSpinner">
+    <div class="spinner-border text-primary" style="width:4rem;height:4rem"></div>
+</div>
+
+<div class="modal fade" id="meterModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="modalTitle">Add Meter</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="meterForm">
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="fw-bold">Serial No</label>
+                            <input id="serialNo" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Consumer ID</label>
+                            <input id="consumerId" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">IP Address</label>
+                            <input id="ipAddress" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">ICCID</label>
+                            <input id="iccid" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">IMSI</label>
+                            <input id="imsi" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Manufacturer</label>
+                            <input id="manufacturer" type="text" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Firmware</label>
+                            <input id="firmware" type="text" class="form-control" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Category</label>
+                            <select id="category" class="form-select">
+                                <option value="SinglePhase">Single Phase</option>
+                                <option value="ThreePhase">Three Phase</option>
+                                <option value="CT">CT</option>
+                                <option value="LT">LT</option>
+                                <option value="HT">HT</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Install Date</label>
+                            <input id="installDate" type="date" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="fw-bold">Status</label>
+                            <select id="status" class="form-select">
+                                <option>Active</option>
+                                <option>Inactive</option>
+                                <option>Faulty</option>
+                                <option>Disconnected</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="btnSave" class="btn btn-primary">Save</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const apiBase = "https://localhost:7035/api/Meter";
+
+        let allMeters = [];
+        let currentDisplayList = []; // For pagination on filtered results
+        let isEditMode = false;
+        let editSerial = null;
+        let currentPage = 1;
+        let rowsPerPage = 10;
+
+        /* LOADING */
+        function showLoading() { $("#overlay, #loadingSpinner").show(); }
+        function hideLoading() { $("#overlay, #loadingSpinner").hide(); }
+
+        /* ALERTS */
+        function showAlert(message, type='danger', timeout=5000) {
+            const html = `
+                <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>`;
+            $("#alertContainer").html(html);
+            if (timeout) setTimeout(() => $("#alertContainer").html(''), timeout);
+        }
+
+        /* LOAD ALL */
+        function loadMeters() {
+            showLoading();
+            $.get(apiBase)
+                .done(res => {
+                    allMeters = res;
+                    currentDisplayList = res; // Initialize display list
+                    displayPage(1);
+                    updateStats(res);
+                })
+                .fail(() => showAlert("Failed to load meters"))
+                .always(hideLoading);
+        }
+
+        /* RENDER TABLE */
+        function renderTable(data) {
+            let html = "";
+            if (!data || !data.length)
+                html = `<tr><td colspan="11" class="text-center py-5">No meters found</td></tr>`;
+            else
+                data.forEach(m => {
+                    const statusClass = `status-${m.status.toLowerCase()}`;
+                    html += `
+                        <tr>
+                            <td>${m.serialNo}</td>
+                            <td>${m.consumerId}</td>
+                            <td>${m.ipAddress}</td>
+                            <td>${m.iccid}</td>
+                            <td>${m.imsi}</td>
+                            <td>${m.manufacturer}</td>
+                            <td>${m.firmware ?? "-"}</td>
+                            <td>${m.category}</td>
+                            <td>${formatDate(m.installDate)}</td>
+                            <td><span class="badge ${statusClass}">${m.status}</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" onclick="editMeter('${m.serialNo}')">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger" onclick="deleteMeter('${m.serialNo}')">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>`;
+                });
+
+            $("#meterTable").html(html);
+        }
+
+        /* FORMAT DATE */
+        function formatDate(dateStr) {
+            if (!dateStr) return "-";
+            const d = new Date(dateStr);
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return `${d.getFullYear()}-${month}-${day}`;
+        }
+
+        /* PAGINATION */
+        function displayPage(page) {
+            currentPage = page;
+            const start = (page - 1) * rowsPerPage;
+            // Use currentDisplayList instead of allMeters to support pagination on filtered data
+            renderTable(currentDisplayList.slice(start, start + rowsPerPage));
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(currentDisplayList.length / rowsPerPage);
+            let html = "";
+            // Prevents showing 0 pages if list is empty
+            if (totalPages === 0) {
+                $("#pagination").html("");
+                return;
+            }
+
+            for (let i = 1; i <= totalPages; i++)
+                html += `
+                    <li class="page-item ${i === currentPage ? 'active' : ''}">
+                        <button class="page-link" onclick="displayPage(${i})">${i}</button>
+                    </li>`;
+            $("#pagination").html(html);
+        }
+
+        /* STATS */
+        function updateStats(list) {
+            $("#activeCount").text(list.filter(x => x.status === "Active").length);
+            $("#inactiveCount").text(list.filter(x => x.status === "Inactive").length);
+            $("#faultyCount").text(list.filter(x => x.status === "Faulty").length);
+            $("#disconnectedCount").text(list.filter(x => x.status === "Disconnected").length);
+            $("#totalCount").text(list.length);
+        }
+
+        /* RESET FORM */
+        function resetForm() {
+            isEditMode = false;
+            editSerial = null;
+            $("#meterForm")[0].reset();
+
+            $("#modalTitle").text("Add Meter");
+
+            // Ensure both unique IDs are editable for new entries
+            $("#serialNo").prop("disabled", false);
+            $("#consumerId").prop("disabled", false);
+        }
+
+        /* EDIT METER */
+        function editMeter(serialNo) {
+            isEditMode = true;
+            editSerial = serialNo;
+
+            showLoading();
+            $.get(`${apiBase}/${serialNo}`)
+                .done(data => {
+                    $("#serialNo").val(data.serialNo);
+                    $("#consumerId").val(data.consumerId);
+                    $("#ipAddress").val(data.ipAddress);
+                    $("#iccid").val(data.iccid);
+                    $("#imsi").val(data.imsi);
+                    $("#manufacturer").val(data.manufacturer);
+                    $("#firmware").val(data.firmware || "");
+                    $("#category").val(data.category);
+
+                    const installDate = new Date(data.installDate);
+                    const formattedDate = installDate.toISOString().split('T')[0];
+                    $("#installDate").val(formattedDate);
+
+                    $("#status").val(data.status);
+
+                    // Disable editing for Serial No AND Consumer ID
+                    $("#serialNo").prop("disabled", true);
+                    $("#consumerId").prop("disabled", true);
+
+                    $("#modalTitle").text("Edit Meter");
+                    $("#meterModal").modal("show");
+                })
+                .fail(() => showAlert("Failed to load meter data"))
+                .always(hideLoading);
+        }
+
+        /* SAVE METER */
+        function saveMeter() {
+            const dto = {
+                serialNo: $("#serialNo").val().trim(),
+                consumerId: $("#consumerId").val().trim(),
+                ipAddress: $("#ipAddress").val().trim(),
+                iccid: $("#iccid").val().trim(),
+                imsi: $("#imsi").val().trim(),
+                manufacturer: $("#manufacturer").val().trim(),
+                firmware: $("#firmware").val().trim(),
+                category: $("#category").val(),
+                installDate: $("#installDate").val(),
+                status: $("#status").val()
+            };
+
+            const url = isEditMode ? `${apiBase}/${editSerial}` : apiBase;
+            const method = isEditMode ? "PUT" : "POST";
+
+            showLoading();
+
+            $.ajax({
+                url: url,
+                method: method,
+                contentType: "application/json",
+                data: JSON.stringify(dto)
+            })
+            .done(() => {
+                $("#meterModal").modal("hide");
+                loadMeters();
+                showAlert(`Meter ${isEditMode ? 'updated' : 'added'} successfully`, "success");
+            })
+            .fail(xhr => {
+                let msg = "Error saving meter";
+                if (xhr.responseJSON) {
+                    if (xhr.responseJSON.errors) {
+                        msg = Object.values(xhr.responseJSON.errors).flat().join("<br>");
+                    } else if (xhr.responseJSON.message) {
+                        msg = xhr.responseJSON.message;
+                    } else if (typeof xhr.responseJSON === "string") {
+                        msg = xhr.responseJSON;
+                    }
+                }
+                showAlert(msg, "danger", 7000);
+            })
+            .always(() => hideLoading());
+        }
+
+        /* DELETE METER */
+        function deleteMeter(serialNo) {
+            if (!confirm(`Delete meter ${serialNo}?`)) return;
+
+            showLoading();
+            $.ajax({
+                url: `${apiBase}/${serialNo}`,
+                method: "DELETE"
+            })
+            .done(() => {
+                showAlert("Meter deleted successfully", "success");
+                loadMeters();
+            })
+            .fail(() => showAlert("Delete failed"))
+            .always(hideLoading);
+        }
+
+        /* --- UPDATED SEARCH LOGIC --- */
+        $("#btnSearch").click(() => {
+            // Get all input values
+            let ser = $("#serialSearch").val().trim().toLowerCase();
+            let id = $("#consumerSearch").val().trim();
+            let date = $("#dateSearch").val(); // yyyy-mm-dd
+            let status = $("#statusSearch").val();
+
+            let list = allMeters;
+
+            // Filter by Serial
+            if (ser) list = list.filter(x => x.serialNo.toLowerCase().includes(ser));
+
+            // Filter by Consumer ID
+            if (id) list = list.filter(x => x.consumerId.toString().includes(id));
+
+            // Filter by Status
+            if (status) list = list.filter(x => x.status === status);
+
+            // Filter by Date
+            if (date) {
+                list = list.filter(x => {
+                    // Extract just the YYYY-MM-DD part from the meter's date
+                    if(!x.installDate) return false;
+                    let meterDate = x.installDate.split('T')[0];
+                    return meterDate === date;
+                });
+            }
+
+            // Update the global display list to current filtered results
+            currentDisplayList = list;
+
+            // Reset to page 1 and display
+            displayPage(1);
+        });
+
+        $("#btnReset").click(() => {
+            $("#serialSearch").val("");
+            $("#consumerSearch").val("");
+            $("#dateSearch").val("");
+            $("#statusSearch").val("");
+
+            // Restore full list
+            currentDisplayList = allMeters;
+            displayPage(1);
+        });
+
+        /* INITIALIZE */
+        $(document).ready(() => {
+            $("#btnSave").off("click").on("click", saveMeter);
+            loadMeters();
+        });
+
+    </script>
+}

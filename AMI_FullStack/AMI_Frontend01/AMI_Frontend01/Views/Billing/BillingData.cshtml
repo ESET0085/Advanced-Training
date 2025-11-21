@@ -1,0 +1,689 @@
+﻿
+
+@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+    ViewData["Title"] = "Billing Management";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+<style>
+    body {
+        background: #FAF8F2 !important;
+        font-family: 'Segoe UI', sans-serif;
+        color: #3B3B3B;
+    }
+
+    /* Main Cards */
+    .card {
+        background: #FFFFFF;
+        border-radius: 14px;
+        border: 1px solid #D8F3DC !important;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.06);
+    }
+
+    .card-header {
+        background: #2D6A4F !important;
+        color: white !important;
+        border-radius: 14px 14px 0 0 !important;
+        padding: 14px 18px;
+    }
+
+    /* Headings */
+    h2, h4, h5, h6 {
+        color: #2D6A4F !important;
+    }
+
+    /* Inputs */
+    .form-control {
+        background: #fff;
+        border: 1px solid #B7E4C7;
+        border-radius: 10px;
+        color: #3B3B3B;
+    }
+
+        .form-control:focus {
+            box-shadow: 0 0 5px #52B788;
+            border-color: #2D6A4F;
+        }
+
+    /* Buttons */
+    .btn-primary {
+        background: #2D6A4F !important;
+        border-color: #2D6A4F !important;
+        color: #fff !important;
+    }
+
+    .btn-success {
+        background: #52B788 !important;
+        border-color: #52B788 !important;
+        color: #fff !important;
+    }
+
+    .btn-secondary {
+        background: #D8F3DC !important;
+        border-color: #B7E4C7 !important;
+        color: #1B4332 !important;
+    }
+
+    .btn:hover {
+        opacity: 0.9;
+    }
+
+    /* Table */
+    .table thead {
+        background: #2D6A4F !important;
+        color: white !important;
+    }
+
+    .table-striped tbody tr:nth-child(even) {
+        background: #F1FFF4;
+    }
+
+    .table-hover tbody tr:hover {
+        background: #D8F3DC !important;
+        color: #1B4332 !important;
+    }
+
+    /* Pagination */
+    .pagination .page-link {
+        color: #2D6A4F;
+        border: 1px solid #B7E4C7;
+        background: #FFFFFF;
+    }
+
+    .pagination .page-item.active .page-link {
+        background: #2D6A4F !important;
+        color: white !important;
+        border-color: #2D6A4F !important;
+    }
+
+    /* Modal */
+    .modal-content {
+        background: #FFFFFF !important;
+        border: 1px solid #D8F3DC;
+        border-radius: 14px;
+    }
+
+    .modal-header {
+        background: #52B788 !important;
+        color: white !important;
+    }
+
+    /* Badges */
+    .badge.bg-warning {
+        background: #D8F3DC !important;
+        color: #1B4332 !important;
+    }
+
+    .badge.bg-success {
+        background: #2D6A4F !important;
+        color: #fff !important;
+    }
+
+    .badge.bg-secondary {
+        background: #B7E4C7 !important;
+        color: #1B4332 !important;
+    }
+
+    /* Search Card */
+    .search-card {
+        background: #FFFFFF;
+        border: 1px solid #D8F3DC;
+    }
+</style>
+
+
+
+<div class="container py-4">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary mb-2">
+            <i class="bi bi-receipt-cutoff"></i> Billing Management
+        </h2>
+        <p class="text-muted">Generate and manage monthly electricity bills</p>
+    </div>
+
+    <div id="alertBox"></div>
+
+    <!-- Generate Bill Section -->
+    <div class="card shadow-lg p-4 mb-4 border-0">
+        <h4 class="fw-bold text-primary mb-3">
+            <i class="bi bi-lightning-charge"></i> Generate Monthly Bill
+        </h4>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label fw-bold">
+                    <i class="bi bi-speedometer2"></i> Meter Serial No
+                </label>
+                <input type="text" id="genMeterSerial" class="form-control form-control-lg" placeholder="MTR-10001" />
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label fw-bold">
+                    <i class="bi bi-calendar-month"></i> Month (yyyy-MM)
+                </label>
+                <input type="month" id="genMonthMeter" class="form-control form-control-lg" />
+            </div>
+
+            <div class="col-md-3 d-flex align-items-end">
+                <button class="btn btn-success btn-lg w-100 shadow" onclick="generateForMeter()">
+                    <i class="bi bi-cash-coin"></i> Generate Bill
+                </button>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <h5 class="fw-bold text-secondary">
+            <i class="bi bi-people-fill"></i> Generate Bills for a Consumer
+        </h5>
+
+        <div class="row g-3 mt-1">
+            <div class="col-md-4">
+                <label class="form-label fw-bold">
+                    <i class="bi bi-person-badge"></i> Consumer ID
+                </label>
+                <input type="number" id="genConsumerId" class="form-control form-control-lg" placeholder="Enter Consumer ID" />
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label fw-bold">
+                    <i class="bi bi-calendar-month"></i> Month (yyyy-MM)
+                </label>
+                <input type="month" id="genMonthConsumer" class="form-control form-control-lg" />
+            </div>
+
+            <div class="col-md-3 d-flex align-items-end">
+                <button class="btn btn-primary btn-lg w-100 shadow" onclick="generateForConsumer()">
+                    <i class="bi bi-people"></i> Generate All Bills
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="card shadow-sm p-3 mb-3 border-0">
+        <div class="row g-3 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label fw-bold">
+                    <i class="bi bi-search"></i> Search by Meter Serial
+                </label>
+                <input type="text" id="searchMeter" class="form-control" placeholder="MTR-10001" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-bold">
+                    <i class="bi bi-search"></i> Search by Consumer ID
+                </label>
+                <input type="number" id="searchConsumer" class="form-control" placeholder="12345" />
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" onclick="filterBills()">
+                    <i class="bi bi-funnel"></i> Filter
+                </button>
+                <button class="btn btn-secondary ms-2" onclick="resetFilter()">
+                    <i class="bi bi-arrow-clockwise"></i> Reset
+                </button>
+            </div>
+            <div class="col-md-2 text-end">
+                <span class="badge bg-info badge-custom">
+                    Total Bills: <span id="totalBillsCount">0</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bills Table -->
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0"><i class="bi bi-table"></i> All Bills</h5>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th><i class="bi bi-hash"></i> Bill ID</th>
+                            <th><i class="bi bi-person"></i> Consumer ID</th>
+                            <th><i class="bi bi-speedometer"></i> Meter Serial</th>
+                            <th><i class="bi bi-lightning"></i> Units</th>
+                            <th><i class="bi bi-currency-rupee"></i> Amount</th>
+                            <th><i class="bi bi-percent"></i> Tax</th>
+                            <th><i class="bi bi-cash-stack"></i> Total</th>
+                            <th><i class="bi bi-calendar-range"></i> Billing Period</th>
+                            <th><i class="bi bi-clock-history"></i> Generated</th>
+                            <th><i class="bi bi-info-circle"></i> Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="billTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center" id="pagination"></ul>
+    </nav>
+</div>
+
+<!-- Loading Spinner -->
+<div class="overlay" id="overlay"></div>
+<div class="loading-spinner" id="loadingSpinner">
+    <div class="spinner-border text-primary" style="width: 4rem; height: 4rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<!-- Bill Modal -->
+<div class="modal fade" id="billModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="bi bi-receipt"></i> Generated Bill Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="billModalBody"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="confirmBill()">
+                    <i class="bi bi-check-circle"></i> Confirm & Add
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-x-circle"></i> Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const apiBase = "https://localhost:7035/api/Billing";
+        let allBills = [];
+        let filteredBills = [];
+        let pendingBill = null;
+
+        let currentPage = 1;
+        const pageSize = 10;
+
+        /* Show/Hide Loading Spinner */
+        function showLoading() {
+            $("#overlay").show();
+            $("#loadingSpinner").show();
+        }
+
+        function hideLoading() {
+            $("#overlay").hide();
+            $("#loadingSpinner").hide();
+        }
+
+        /* Load all bills */
+        function loadBills() {
+            showLoading();
+            $.get(apiBase, function(data) {
+                allBills = data;
+                filteredBills = [...allBills];
+                currentPage = 1;
+                renderTable();
+                renderPagination();
+                updateBillCount();
+                hideLoading();
+            }).fail((xhr) => {
+                hideLoading();
+                if(xhr.status === 404) {
+                    showAlert("No bills found in the system. Generate your first bill!", "info");
+                    allBills = [];
+                    filteredBills = [];
+                    renderTable();
+                    updateBillCount();
+                } else {
+                    showAlert("Cannot load bills. Please try again.", "danger");
+                }
+            });
+        }
+
+        /* Update bill count */
+        function updateBillCount() {
+            $("#totalBillsCount").text(filteredBills.length);
+        }
+
+        /* Render table */
+        function renderTable() {
+            const start = (currentPage - 1) * pageSize;
+            const end = start + pageSize;
+            const pageData = filteredBills.slice(start, end);
+
+            let rows = "";
+            if(pageData.length === 0) {
+                rows = `<tr><td colspan="10" class="text-center text-muted py-4">
+                    <i class="bi bi-inbox" style="font-size: 3rem;"></i>
+                    <p class="mt-2">No bills to display</p>
+                </td></tr>`;
+            } else {
+                pageData.forEach(b => {
+                    const statusBadge = b.status === 'Pending'
+                        ? '<span class="badge bg-warning text-dark">Pending</span>'
+                        : '<span class="badge bg-success">Paid</span>';
+
+                    rows += `
+                    <tr>
+                        <td><strong>${b.billId}</strong></td>
+                        <td>${b.consumerId}</td>
+                        <td><span class="badge bg-secondary">${b.meterSerialNo}</span></td>
+                        <td>${b.unitsConsumed.toFixed(2)}</td>
+                        <td>₹${b.amount.toFixed(2)}</td>
+                        <td>₹${b.taxAmount.toFixed(2)}</td>
+                        <td><strong>₹${b.totalAmount.toFixed(2)}</strong></td>
+                        <td><small>${formatDate(b.billingPeriodStart)} to ${formatDate(b.billingPeriodEnd)}</small></td>
+                        <td><small>${formatDate(b.generatedDate)}</small></td>
+                        <td>${statusBadge}</td>
+                    </tr>`;
+                });
+            }
+            $("#billTable").html(rows);
+        }
+
+        /* Pagination buttons */
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredBills.length / pageSize);
+            let html = "";
+
+            if(totalPages <= 1){
+                $("#pagination").html("");
+                return;
+            }
+
+            // Previous button
+            html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                        <a class="page-link" href="#" onclick="goPage(${currentPage - 1})">Previous</a>
+                    </li>`;
+
+            for(let i=1; i<=totalPages; i++){
+                html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
+                            <a class="page-link" href="#" onclick="goPage(${i})">${i}</a>
+                        </li>`;
+            }
+
+            // Next button
+            html += `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                        <a class="page-link" href="#" onclick="goPage(${currentPage + 1})">Next</a>
+                    </li>`;
+
+            $("#pagination").html(html);
+        }
+
+        function goPage(page) {
+            const totalPages = Math.ceil(filteredBills.length / pageSize);
+            if(page < 1 || page > totalPages) return;
+
+            currentPage = page;
+            renderTable();
+            renderPagination();
+        }
+
+        /* Format date */
+        function formatDate(dateStr) {
+            return new Date(dateStr).toLocaleDateString('en-IN', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+        }
+
+        /* Show alert */
+        function showAlert(msg, type="success") {
+            const icon = type === 'success' ? 'check-circle' :
+                        type === 'danger' ? 'exclamation-triangle' :
+                        type === 'warning' ? 'exclamation-circle' : 'info-circle';
+
+            $("#alertBox").html(`
+                <div class="alert alert-${type} alert-dismissible fade show shadow-sm">
+                    <i class="bi bi-${icon}"></i> ${msg}
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                </div>`);
+
+            // Auto dismiss after 5 seconds
+            setTimeout(() => {
+                $(".alert").alert('close');
+            }, 5000);
+        }
+
+        /* Generate bill for meter */
+        function generateForMeter() {
+            const meter = $("#genMeterSerial").val().trim();
+            const month = $("#genMonthMeter").val();
+
+            // Validation
+            if (!meter) {
+                showAlert("Please enter a meter serial number", "warning");
+                $("#genMeterSerial").focus();
+                return;
+            }
+            if (!month) {
+                showAlert("Please select a month", "warning");
+                $("#genMonthMeter").focus();
+                return;
+            }
+
+            showLoading();
+            $.get(`${apiBase}/GenerateMonthlyForMeter?meterSerialNo=${meter}&month=${month}`, function(bill) {
+                hideLoading();
+                pendingBill = bill;
+                showBillModal([bill]);
+                showAlert("Bill generated successfully!", "success");
+            }).fail(xhr => {
+                hideLoading();
+                handleError(xhr);
+            });
+        }
+
+        /* Generate bills for consumer */
+        function generateForConsumer() {
+            const id = $("#genConsumerId").val();
+            const month = $("#genMonthConsumer").val();
+
+            // Validation
+            if (!id || id <= 0) {
+                showAlert("Please enter a valid consumer ID", "warning");
+                $("#genConsumerId").focus();
+                return;
+            }
+            if (!month) {
+                showAlert("Please select a month", "warning");
+                $("#genMonthConsumer").focus();
+                return;
+            }
+
+            showLoading();
+            $.get(`${apiBase}/GenerateMonthlyForConsumer?consumerId=${id}&month=${month}`, function(res) {
+                hideLoading();
+                pendingBill = res.bills;
+
+                // Check for errors
+                if(res.summary && res.summary.errors && res.summary.errors.length > 0) {
+                    let errorMsg = "<strong>Some bills could not be generated:</strong><br>";
+                    res.summary.errors.forEach(err => {
+                        errorMsg += `• ${err}<br>`;
+                    });
+                    showAlert(errorMsg, "warning");
+                }
+
+                if(res.bills && res.bills.length > 0) {
+                    showBillModal(res.bills, res.summary);
+                    showAlert(`${res.bills.length} bill(s) generated successfully!`, "success");
+                } else {
+                    showAlert("No new bills could be generated. Bills may already exist for this period.", "info");
+                }
+            }).fail(xhr => {
+                hideLoading();
+                handleError(xhr);
+            });
+        }
+
+        /* Handle API errors */
+        function handleError(xhr) {
+            let errorMsg = "An error occurred. Please try again.";
+
+            if(xhr.status === 400) {
+                errorMsg = xhr.responseText || "Invalid request. Please check your input.";
+            } else if(xhr.status === 404) {
+                errorMsg = xhr.responseText || "Resource not found.";
+            } else if(xhr.status === 409) {
+                // Conflict - duplicate bill
+                const response = xhr.responseJSON;
+                errorMsg = response && response.error ? response.error :
+                          "<strong>Duplicate Bill Detected!</strong><br>A bill already exists for this consumer and billing period.";
+                showAlert(errorMsg, "warning");
+                return;
+            } else if(xhr.status === 500) {
+                errorMsg = "Server error. Please contact support.";
+            }
+
+            showAlert(errorMsg, "danger");
+        }
+
+        /* Show modal with bill details */
+        function showBillModal(bills, summary = null) {
+            let html = "";
+
+            if(summary) {
+                html += `
+                <div class="card mb-3 bg-light border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="bi bi-graph-up"></i> Summary
+                        </h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Consumer ID:</strong> ${summary.consumerId}</p>
+                                <p class="mb-1"><strong>Month:</strong> ${summary.month}</p>
+                                <p class="mb-1"><strong>Bills Generated:</strong> ${summary.billsGenerated}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Total Units:</strong> ${summary.totalUnitsConsumed.toFixed(2)}</p>
+                                <p class="mb-1"><strong>Total Amount:</strong> ₹${summary.totalAmount.toFixed(2)}</p>
+                                <p class="mb-1"><strong>Total Tax:</strong> ₹${summary.totalTax.toFixed(2)}</p>
+                                <p class="mb-0"><strong class="text-success">Total Payable:</strong> <span class="text-success fs-5">₹${summary.totalPayable.toFixed(2)}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }
+
+            bills.forEach((b, index) => {
+                html += `
+                <div class="card mb-2 shadow-sm border-success">
+                    <div class="card-header bg-success text-white">
+                        <h6 class="mb-0">
+                            <i class="bi bi-receipt"></i> Bill #${index + 1} - Meter: ${b.meterSerialNo}
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Consumer ID:</strong> ${b.consumerId}</p>
+                                <p class="mb-1"><strong>Units Consumed:</strong> ${b.unitsConsumed.toFixed(2)} kWh</p>
+                                <p class="mb-1"><strong>Amount:</strong> ₹${b.amount.toFixed(2)}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Tax Amount:</strong> ₹${b.taxAmount.toFixed(2)}</p>
+                                <p class="mb-1"><strong class="text-success">Total Amount:</strong> <span class="text-success">₹${b.totalAmount.toFixed(2)}</span></p>
+                                <p class="mb-1"><strong>Status:</strong> <span class="badge bg-warning text-dark">${b.status}</span></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="mb-0 text-muted">
+                            <small>
+                                <i class="bi bi-calendar-range"></i>
+                                <strong>Billing Period:</strong> ${formatDate(b.billingPeriodStart)} to ${formatDate(b.billingPeriodEnd)}
+                            </small>
+                        </p>
+                    </div>
+                </div>`;
+            });
+
+            $("#billModalBody").html(html);
+
+            const modal = new bootstrap.Modal(document.getElementById("billModal"));
+            modal.show();
+        }
+
+        /* Add pending bill(s) to table and refresh */
+        function confirmBill() {
+            if (!pendingBill) return;
+            if (!Array.isArray(pendingBill)) pendingBill = [pendingBill];
+
+            // Close modal first
+            const modalEl = document.getElementById("billModal");
+            bootstrap.Modal.getInstance(modalEl).hide();
+
+            // Show success message
+            showAlert(`${pendingBill.length} bill(s) confirmed. Refreshing data...`, "success");
+
+            // Clear pending bill
+            pendingBill = null;
+
+            // Clear form inputs
+            $("#genMeterSerial").val("");
+            $("#genMonthMeter").val("");
+            $("#genConsumerId").val("");
+            $("#genMonthConsumer").val("");
+
+            // Reload bills from server
+            setTimeout(() => {
+                loadBills();
+            }, 500);
+        }
+
+        /* Filter bills */
+        function filterBills() {
+            const meter = $("#searchMeter").val().trim();
+            const cons = $("#searchConsumer").val().trim();
+
+            if(!meter && !cons) {
+                showAlert("Please enter a search criteria", "info");
+                return;
+            }
+
+            filteredBills = allBills.filter(b => {
+                return (!meter || b.meterSerialNo.toLowerCase().includes(meter.toLowerCase())) &&
+                       (!cons || b.consumerId == cons);
+            });
+
+            currentPage = 1;
+            renderTable();
+            renderPagination();
+            updateBillCount();
+
+            if(filteredBills.length === 0) {
+                showAlert("No bills found matching your search criteria", "info");
+            } else {
+                showAlert(`Found ${filteredBills.length} bill(s)`, "success");
+            }
+        }
+
+        function resetFilter() {
+            $("#searchMeter").val("");
+            $("#searchConsumer").val("");
+            filteredBills = [...allBills];
+            currentPage = 1;
+            renderTable();
+            renderPagination();
+            updateBillCount();
+            showAlert("Filters cleared", "info");
+        }
+
+        $(document).ready(function() {
+            loadBills();
+
+            // Set max date for month inputs to current month
+            const today = new Date();
+            const maxMonth = today.toISOString().slice(0, 7);
+            $("#genMonthMeter, #genMonthConsumer").attr("max", maxMonth);
+        });
+    </script>
+}
